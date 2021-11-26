@@ -1,0 +1,31 @@
+컬렉션 프레임웍 핵심 인터페이스
+
+* List : 순서가 있는 데이터의 집합, 데이터의 중복을 허용
+구현클래스 => ArrayList, LinkedList, Stack, Vector 등
+
+* Set : 순서가 없는 데이터의 집합, 데이터의 중복을 허용하지 않음
+구현클래스 => HashSet, TreeSet 등
+
+* Map : 키와 값이 쌍으로 이루어진 데이터의 집합, 순서가 없음
+      키는 중복을 허용하지 않지만 값은 중복을 허용
+구현클래스 => HashMap, TreeMap, Hashtable, Properties 등
+
+
+* List와 Set을 구현한 컬렉션 클래스들은 서로 많은 공통부분이 있어서, 
+  공통된 부분을 뽑아 Collection 인터페이스를 정의할 수 있었지만, 
+  Map 인터페이스는 이들과 전혀 다르게 컬렉션을 다루기 때문에 
+  같은 상속계층도에 포함되지 못했다.
+
+
+  List  <--- Vector     <--- Stack
+        <--- ArrayList
+        <--- LinkedList
+
+
+  Set   <--- SortedSet  <--- TreeSet
+        <--- HashSet
+
+
+  Map   <--- Hashtable
+        <--- HashMap    <--- LinkedHashMap
+        <--- SortedMap  <--- TreeMap
