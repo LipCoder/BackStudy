@@ -1,0 +1,222 @@
+item10
+equals는 일반 규약을 지켜 재정의하라
+
+equals는 재정의가 쉬워 보이지만, 잘못하면 끔찍한 결과를 초래
+
+재정의 하지 않는 것이 문제를 회피하기 가장 좋음
+다음사항에 해당 된다면 equals 메서드는 재정의하지 않는것이 최선
+
+1. 각 인스턴스가 본질적으로 고유하다.
+2. 인스턴스의 논리적 동치성을 검사할 일이 없다.
+3. 상위 클래스에서 재정의한 equals가 하위 클래스에도 딱 들어맞음.
+4. 클래스가 private이거나 package-private이고 equals 메서드를 호출할 일이 없다.
+
+@Override public boolean equals(Object o) {
+    throw new AssertionError(); // 호출 금지!!!
+}
+
+
+* 그러면 언제 equals를 재정의해야 할까?
+
+객체 식별성이 아니라 "논리적 동치성"을 확인해야 하는데, 
+상위 클래스의 equals가 논리적 동치성을 비교하도록 재정의되지 않았을때..
+
+ex) 값클래스 (Integer, String)
+만약 이 클래스에 equals를 사용한다면... ==> 값을 비교하고 싶은것일것이다.
+
+논리적 동치성 재정의 
+==> 인스턴스는 값을 비교하길 원하는 프로그래머의 기대에 부흥
+==> Map의 키와 Set의 원소로 사용할 수 있게됨
+
+Enum의 경우 같은 인스턴스가 2개 이상 존재 할 수 없음
+(논리적 동치성 == 객체 식별성)
+==> equals는 객체 식별 뿐만 아니라 논리적 동치성까지 확인해줌
+
+
+* equals 메서드는 동치관계를 구현하며, 다음을 만족함
+
+[null이 아닌 모든 참조 값 x, y, z에 대해...]
+- 반사성 : x.equals(x)는 true이다.
+- 대칭성 : x.equals(y)가 true면 y.equals.(x)도 true이다.
+- 추이성 : x.equals(y)가 true, y.equals(z)도 true이면 x.equals(z)도 true이다.
+- 일관성 : x.equals(y)를 반복해서 호출하면 항상 true를 반환하거나 항상 false를 반환한다.
+- null-아님 : x.equals(null)은 false다.
+
+ex) 대칭성 위배
+public final class CaseInsensitiveString {
+    private final String s;
+
+    public CaseInsensitiveString(String s) {
+        this.s = Objects.requireNonNull(s);
+    }
+
+    @Override public boolean equals(Object o) {
+        if (o instanceof CaseInsensitiveString) {
+            return s.equalsIgnoreCase(
+                ((CaseInsensitiveString)o).s);
+            )
+        if(o instanceof String) {    // 한 방향으로만 작동!
+            return s.equalsIgnoreCase((String) o);
+        }
+        return false;
+        // ...
+    }
+}
+
+CaseInsensitiveString cis = new CaseInsensitiveString("Polish");
+String s = "polish";
+
+cis.equals(s)
+// true를 반환
+
+CaseInsensitiveString의 equals는 일반 String을 알고 있지만, 
+반대로 String의 equals는 CaseInsensitiveString의 존재를 모른다.
+
+s.equals(cis) 
+// false를 반환하여, 대칭성을 위배한다.
+
+List<CaseInsensitiveString> list = new ArrayList<>();
+list.add(cis);
+
+equals 규약을 어기면 그 객체를 사용하는 다른 객체들이 어떻게 반응할지 알 수 없음
+
+-> 다음 문제는 이렇게 바꿔서 재정의 해줘야 한다!
+@Override public boolean equals(Object o) {
+    return o instanceof CaseInsensitiveString &&
+        ((CaseInsensitiveString)o).s.equalsIgnoreCase(s);
+}
+
+
+ex) 2차원 점을 표현하는 클래스
+
+public class Point {
+    private final int x;
+    private final int y;
+
+    public Point(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    @Override public boolean equals(Object o) {
+        if(!(o instanceof Point)) 
+            return false;
+        Point p = (Point)o;
+        return p.x == x && p.y == y;
+    }
+}
+
+// 확장시켜 색상을 추가한다.
+public class ColorPoint extends Point {
+    private final Color color;
+
+    public ColorPoint(int x, int y, Color color) {
+        super(x, y);
+        this.color = color;
+    }
+
+    // 시도 1: 잘못된 코드 - 대칭성 위배!
+    @Override public boolean equals(Object o) {
+        if (!(o instanceof ColorPoint))
+            return false;
+        return super.equals(o) && ((ColorPoint)o).color == color;
+    }
+
+    // 시도 2: 추이성 위배!
+    @Override public boolean equals(Object o) {
+        if (!(o instanceof Point))
+            return false;
+
+        // o가 일반 Point면 색상을 무시하고 비교
+        if(!(o instanceof ColorPoint))
+            return o.equals(this);
+
+        return super.equals(o) && ((ColorPoint)o).color == color;
+    }
+}
+
+// 시도 1
+Point p = new Point(1, 2);
+ColorPoint cp = new ColorPoint(1, 2, Color.RED);
+
+p.equals(cp); // true 반환
+cp.equals(p); // false 반환
+
+
+// 시도 2
+ColorPoint p1 = new ColorPoint(1, 2, Color.RED);
+Point p2 = new Point(1, 2);
+ColorPoint p3 = new ColorPoint(1, 2, Color.BLUE);
+
+p1.equals(p2); // true
+p2.equals(p3); // true
+p1.equals(p3); // false
+
+
+도대체 해법은 무엇인가??
+==> 구체 클래스를 확장해 새로운 값을 추가하면서 equals 규약을 만족시킬 방법은 존재하지 않는다.
+
+* 그나마 괜찮은 우회 방법
+상속대신 컴포지션을 사용하는 것이다.
+
+public class ColorPoint {
+    private final Point point;
+    private final Color color;
+
+    public ColorPoint(int x, int y, Color color) {
+        point = new Point(x, y);
+        this.color = Objects.requireNonNull(color);
+    }
+
+    // ColorPoint의 Point 뷰를 반환
+    public Point asPoint() {
+        return point;
+    }
+
+    @Override public boolean equals(Object o) {
+        if(!(o instanceof ColorPoint)) 
+            return false;
+        ColorPoint cp = (ColorPoint)o;
+        return cp.point.equals(point) && cp.color.equals(color);
+    }
+
+}
+
+
+일관성 => 두 객체가 같다면 수정되지 않는 한 앞으로도 영원히 같아야 한다.
+equals의 판단에 신뢰할 수 없는 자원이 끼어들면 안됨
+
+* 양질의 equals 메서드 구현 방법 정리
+1. == 연산자를 사용해 입력이 자기 자신의 참조인지 확인
+2. instanceof 연산자로 입력이 올바른 타입인지 확인
+3. 입력을 올바른 타입으로 형변환
+4. 입력 객체와 자기 자신의 대응되는 핵심 필드들이 모두 일치하는지 하나씩 검사
+
+어떤 필드를 비교하느냐에 따라 equals 성능이 좌지우지 되기도함
+
+equals를 구현했다면 3가지를 자문해본다. 
+=> 대칭적인가?
+=> 추이성이 있는가?
+=> 일관적인가?
+
+
+지금까지의 재사용 비법을 적용한 코드
+ex) PhoneNumber.java
+
+
+* 주의사항 
+- equals를 재정의할 땐 hashCode도 반드시 재정의한다.
+- 너무 복잡하게 해결하려 들지 말자.
+- Object 외의 태입을 매개변수로 equals 메서드는 선언하지 말자
+
+// 입력 타입은 반드시 Object여야 한다!
+// 이 메서드는 오버라이딩도 안됨
+public boolean equals(MyClass o) { 
+    ...
+}
+
+# 정리
+꼭 필요한 경우가 아니면 equals를 재정의하지 말자.
+많은 경우에서 Object의 equals가 원하는 비교를 정확하게 수행해준다. 
+만약 재정의해야 할 때는 그 클래스의 핵심 필드를 모두 빠짐없이, 
+위에서 언급한 5가지 규약을 지켜가며 비교해야 한다.

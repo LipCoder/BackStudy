@@ -1,0 +1,86 @@
+item11
+equals를 재정의하려거든 hashCode도 재정의하라
+
+hashCode도 재정의하지 않으면 hashCode 일반 규약을 어기게 되어
+해당 클래스 인스턴스를 HashMap이나 HashSet 컬렉션의 원소로 사용할 때
+문제를 일으킬 것이다.
+
+=> 논리적으로 같은 객체는 같은 해시코드를 반환해야 한다.
+
+ex)
+Map<PhoneNumber, String> m = newHashMap<>();
+m.put(new PhoneNumber(707, 867, 5309), "제니");
+
+m.get(new PhoneNumber(707, 867, 5309)); // null 반환..
+
+여기서 두 개의 PhoneNumber 인스턴스가 사용되었다.
+1. HashMap에 "제니"를 넣을때
+2. 이를 꺼내려고 할 때 
+
+--> HashCode를 재정의하지 않았으므로 두 객체가 서로 다른 해시코드를 반환
+
+
+// 최악이지만 적법한 hashCode 구현 - 사용 금지!
+@Override public int hashCode() { return 42; }
+
+인스턴스마다 똑같은 해시코드이기 때문에 HashMap이 연결 리스트처럼 돌아갈 것이다..
+그러면 평균 수행 시간이 O(1)에서 O(n)으로 느려질것이다.
+
+
+* 좋은 hashCode 를 작성하는 요령
+1. int 변수 result를 선언한 후 값 c로 초기화한다.
+(c는 객체 첫번째 핵심 필드를 단계 2.a 방식으로 계산한 해시코드다)
+
+2. 나머지 핵심 필드 f 각각에 대해 다음 작업을 수행한다.
+    a. 해당 필드의 해시코드 c를 계산
+        - 기본 타입 필드라면, [Type].hashCode(f)를 수행
+        - equals를 재귀적으로 호출해 비교하는 경우, hashCode도 재귀적으로 호출
+        - 필드가 배열이라면, 핵심 원소 각각을 별도 필드처럼 다룬다.
+    b. a에서 계산한 해시코드 c로 result를 갱신한다.
+        result = 31 * result + c;
+        (31을 곱하는 이유 : 홀수 이면서 소수, 오버플로우 방지)
+    c. result를 반환한다.
+
+
+똑같은 인스턴스가 해시코드를 동일하게 만들어주는지 테스트 해본다.
+만약 제대로 동작하지 않는다면, 해결한다.
+
+// 전형적인 hashCode 메서드
+@Override public int hashCode() {
+    int result = Short.hashCode(areaCode);
+    result = 31 * result + Short.hashCode(prefix);
+    result = 31 * result + Shrot.hashCode(lineNum);
+    return result;
+}
+
+해시 충돌이 더 적은 방법을 써야 하는 경우...
+구아바의 com.google.common.hash.Hashing을 참고
+
+
+// 한 줄짜리 hashCode 메서드 - 성능은 조금 떨어짐
+@Override public int hashCode() {
+    return Objects.hash(lineNum, prefix, areaCode);
+}
+
+
+// 계산 비용이 클 경우 캐싱 방식도 고려 
+// 해시코드를 지연 초기화하는 hashCode 메서드 - 스레드 안정성도 고려해야함
+private int hashCode; // 0 초기화
+
+@Override public int hashCode() {
+    int result = hashCode;
+    if(result == 0) {
+        result = Short.hashCode(areaCode);
+        result = 31 * result + Short.hashCode(prefix);
+        result = 31 * result + Shrot.hashCode(lineNum);
+        hashCode = result;
+    }
+    return result;
+}
+
+성능을 이유로 해시코드 계산시 핵심 필드를 생략해서는 안 된다.
+속도는 빨라질 수 있어도 해시 품질이 나빠져 성능이 떨어질 수 있다.
+
+# 정리
+equals를 재정의할 때 hashCode도 반드시 재정의한다.
+그렇지 않으면 프로그램이 제대로 동작하지 않을 것이다.

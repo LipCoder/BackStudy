@@ -1,0 +1,6 @@
+item8
+finalizer와 cleaner 사용을 피하라
+
+자바는 두가지 객체 소멸자를 제공
+finalizer ==> 예측 불가, 상황에 따라 위험할 수 있음 ==> 기본적으로 쓰지 말아야함
+cleaner ==> finalizer 보다 덜 위험 ==> 여전히 예측 불가에 불필요함
