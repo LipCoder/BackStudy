@@ -1,0 +1,194 @@
+item13
+clone 재정의는 주의해서 진행하라
+
+clone 메서드가 선언된 곳 Object 
+(접근 제한자는 protected, 상속받은 하위클래스 내에서만 접근 가능)
+
+* Cloneable 인터페이스
+복제해도 되는 클래스임을 명시하는 용도
+(믹스인 인터페이스, mixin interface)
+
+메서드 하나 없는 이 인터페이스로 하는 일
+--> clone 메서드의 동작 방식을 결정한다. 
+
+Cloneable이 구현된 클래스에서 clone 메서드를 호출하면, 
+그 객체 필드를 하나하나 복사한 객체를 반환하며,
+그렇지 않은 클래스에서 clone 메서드를 호출하면,
+클래스의 인스턴스에서 호출하면 CloneNotSupportedException을 던진다.
+
+
+제대로 동작하는 clone 메서드를 가진 상위 클래스를 상속하여 
+Cloneable을 구현하고 싶다고 해보자. 
+
+먼저 super.clone을 호출한다. 그렇게 얻은 객체는 원본의 완벽한 복제본일 것이다.
+쓸데없는 복사를 지양한다는 관점에서 보면 불변 클래스는 clone 메서드를 제공하지 않는게 좋다.
+
+이를 고려해 PhoneNumber의 clone 메서드는 다음처럼 구현할 수 있다.
+
+@Override public PhoneNumber clone() {
+    try {
+        return (PhoneNumber) super.clone(); // super.clone을 호출하기 전에 형변환
+    } catch(CloneNotSupportedException e) {
+        // clone 시 검사 예외
+        // 하지만 호출될 일이 없음 
+        // --> PhoneNumber가 Cloneable을 구현하므로 super.clone이 성공할 것을 알기에
+        // 검사 예외
+        throw new AssertionError(); // 일어날 수 없는 일이다.
+    }
+}
+
+
+* 가변 객체를 참조하는 순간 재앙으로 돌변
+
+ex) Stack.java
+
+이 클래스를 복제할 수 있게 만들어본다...
+elements 배열 필드는 원본 Stack가 동일할 것이다.
+그렇기 때문에 원본이나 복제본 중 하나를 수정하면 다른 하나도 수정되어 불변식을 해친다. 
+따라서 프로그램이 이상하게 동작하거나 NullPointerException을 던질 것이다.
+
+
+clone은 원본 객체에 아무런 해를 끼치지 않는 동시에 복제된 객체의 불변식을 보장해야 한다.
+--> Stack의 clone 메서드가 제대로 동작하려면 스택 내부 정보를 복사해야 함
+        -> 가장 쉬운 방법은 elements 배열의 clone을 재귀적으로 호출해 주는것
+
+// 가변 상태를 참조하는 클래스용 clone 메서드
+@Override public Stack clone() {
+    try {
+        Stack result = (Stack) super.clone();                       
+        // Object[] 타입으로 형변환 할 필요는 없음
+        // clone은 원본 배열과 똑같은 배열을 반환 (배열복사는 clone을 권장)
+        result.elements = elements.clone();                         
+        return result;
+    } catch (CloneNotSupportedException e) {
+        throw new AssertionError();
+    }
+}
+
+elements 필드가 final이라면 이 방식은 작동하지 않음
+떄문에 복제 가능한 일부 클래스를 만들기 위해서는 final 한정자를 제거해야 할 수도 있음
+
+
+* 하지만 clone을 재귀적으로 호출하는 것만으로는 충분하지 않을 때도 있음.
+
+해시테이블용 clone 메서드
+
+public class HashTable implements Cloneable {
+    private Entry[] buckets = ...;
+
+    private static class Entry {
+        final Object key;
+        Object value;
+        Entry next;
+
+        Entry(Object key, Object value, Entry next) {
+            this.key = key;
+            this.value = value;
+            this.next = next;
+        }
+    }
+
+    // 코드 생략
+}
+
+// 잘못된 clone 메서드 - 가변 상태를 공유!
+@Override public HashTable clone() {
+    try {
+        HashTable result = (HashTable) super.clone();
+        result.buckets = buckets.clone();
+        return result;
+    } catch (CloneNotSupportedException e) {
+        return new AssertionError();
+    }
+}
+
+복제본은 자신만의 버킷 배열을 갖지만, 이 배열은 원본과 같은 연결 리스트를 참조하여
+원본과 복사본 모두 예기치 않게 동작할 가능성이 생긴다. 
+=> 각 버킷을 구성하는 연결리스트도 복사해야 한다.
+
+다음은 이에대한 일반적 해법이다.
+
+// 복잡한 가변 상태를 갖는 클래스용 재귀적 clone 메서드
+public class HashTable implements Cloneable {
+    private Entry[] buckets = ...;
+
+    private static class Entry {
+        final Object key;
+        Object value;
+        Entry next;
+
+        Entry(Object key, Object value, Entry next) {
+            this.key = key;
+            this.value = value;
+            this.next = next;
+        }
+
+        // 이 엔트리가 가리키는 연결 리스트를 재귀적으로 복사
+        Entry deepCopy() {
+            return new Entry(key, value,
+                next == null ? null : next.deepCopy());
+        }
+    }
+
+    @Override public HashTable clone() {
+        try {
+            HashTable result = (HashTable) super.clone();
+            result.buckets = new Entry[bukets.length];
+            // 각 버킷이 가지는 연결 리스트를 복사
+            for(int i = 0; i < buckets.length; i++)
+                if(buckets[i] != null)
+                    result.buckets[i] = buckets[i].deepCopy();
+            return result;
+        } catch(CloneNotSupportedException e) {
+            throw AssertionError();
+        }
+    }
+}
+
+재귀함수로 연결 리스트를 복사하는 방식은 호출 스택으로 인해 메모리 낭비를 불러올 수 있다.
+때문에 연결 리스트가 길어지면 스택 오버플로우를 일으킬 위험이 있다. 
+
+// 엔트리 자신이 가리키는 연결 리스트를 반복적으로 복사한다.
+Entry deepCopy() {
+    Entry result = new Entry(key, value, next);
+    for(Entry p = result; p.next != null; p = p.next)
+        p.next = new Entry(p.next.key, p.next.value, p.next.next);
+    return result;
+}
+
+
+
+// 하위 클래스에서 Cloneable을 지원하지 못하게 하는 clone 메서드
+@Overridz  
+protected final Object clone() throws Clone {
+    throw new CloneNotSupportedException();
+}
+
+위 모든 작업들은 꼭 해줘야 하는건가? 다행히 이처럼 복잡한 경우는 드물다.
+물론 Cloneable을 이미 구현한 클래스를 확장한다면 어쩔 수 없이 clone을 잘 작동하도록 구현해야 한다.
+그렇지 않은 상황에서는 "복사 생성자"와 "복사 팩터리"라는 더 나은 객체 복사 방식을 제공할 수 있다.
+
+복사 생성자 => 자신과 같은 클래스의 인스턴스를 인수로 받는 생성자
+복사 팩터리 => 복사 생성자를 모방한 정적 팩터리
+
+// 복사 생성자
+public Yum(Yum yum) { ... };
+
+// 복사 팩터리
+public static Yum newInstance(Yum yum) { ... };
+
+이 두 방식은 Cloneable/clone 방식보다 나은 면이 많다.
+- 언어 모순적이고 위험천만한 객체 생성 메커니즘(생성자를 쓰지 않는 방식)을 사용하지 않음
+- 문서화된 규약에 기대지 않음
+- 정상적인 final 필드 용법과 충돌하지 않음
+- 불필요한 검사 예외를 던지지 않음
+- 현변환이 필요치 않음
+
+
+# 정리
+새로운 인터페이스를 만들 때에는 절대 Cloneable을 확장해서는 안 됨
+새로운 클래스에서도 Cloneable을 구현해서는 안됨
+final 클래스인 경우 Cloneable 구현의 위험이 크지 않지만, 
+성능 최적화 관점에서 검토 후 문제가 없는 경우에만 드물게 허용해야 한다.
+--> 복제 기능은 생성자와 팩터리를 이용하는 게 최고!
+--> 단, 배열만은 clone 메서드 방식이 가장 깔끔하고 합당함
