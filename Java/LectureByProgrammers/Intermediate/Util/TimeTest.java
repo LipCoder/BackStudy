@@ -29,5 +29,6 @@ public class TimeTest {
         System.out.println(timePoint.getMonthValue());
         System.out.println(month.getValue());
         System.out.println(timePoint.getHour());
+        System.out.println(timePoint.getMonth());
     }
 }
