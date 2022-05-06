@@ -1,0 +1,31 @@
+
+
+규모있는 사이트의 경우 (예를 들면 네이버)
+문맥을 유지하면서 다른 팀이 만들어간다.
+
+
+(Home Directory)
+localhost:80
+            /admin
+                /index
+            /dealer    
+            /community
+            /academy
+
+==> 특정 디렉토리를 별개의 사이트가 맡는 것을 
+    Context라고 한다.
+(이것도 Home Directory)
+Context Name
+    /academy
+        ROOT
+            /index.html
+            /help.html
+            /member
+
+
+Context 설정은 server.xml에 Host 태그 안에 설정한다.
+
+최신 버전은 Context 설정을 지양한다.
+왜냐하면 웹 서버를 껐다 켜야 하기 때문이다.
+대신 META-INFO라는 곳에 컨텍스트를 따로 설정한다.
+

@@ -1,0 +1,744 @@
+06-May-2022 16:13:03.343 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/9.0.62
+06-May-2022 16:13:03.348 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  Mar 31 2022 14:34:15 UTC
+06-May-2022 16:13:03.348 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  9.0.62.0
+06-May-2022 16:13:03.348 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Mac OS X
+06-May-2022 16:13:03.348 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.15.7
+06-May-2022 16:13:03.349 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          x86_64
+06-May-2022 16:13:03.349 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           /Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home
+06-May-2022 16:13:03.349 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          11.0.12+7
+06-May-2022 16:13:03.349 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          Eclipse Foundation
+06-May-2022 16:13:03.349 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     /Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62
+06-May-2022 16:13:03.350 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     /Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62
+06-May-2022 16:13:03.364 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.lang=ALL-UNNAMED
+06-May-2022 16:13:03.364 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.io=ALL-UNNAMED
+06-May-2022 16:13:03.364 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util=ALL-UNNAMED
+06-May-2022 16:13:03.364 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-May-2022 16:13:03.364 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-May-2022 16:13:03.364 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/conf/logging.properties
+06-May-2022 16:13:03.365 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-May-2022 16:13:03.365 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djdk.tls.ephemeralDHKeySize=2048
+06-May-2022 16:13:03.365 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-May-2022 16:13:03.365 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+06-May-2022 16:13:03.365 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dignore.endorsed.dirs=
+06-May-2022 16:13:03.365 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62
+06-May-2022 16:13:03.365 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62
+06-May-2022 16:13:03.366 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/temp
+06-May-2022 16:13:03.368 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 프로덕션 환경들에서 최적의 성능을 제공하는, APR 기반 Apache Tomcat Native 라이브러리가, 다음 java.library.path에서 발견되지 않습니다: [/Users/twoson/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+06-May-2022 16:13:03.691 정보 [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+06-May-2022 16:13:03.723 정보 [main] org.apache.catalina.startup.Catalina.load [614] 밀리초 내에 서버가 초기화되었습니다.
+06-May-2022 16:13:03.781 정보 [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+06-May-2022 16:13:03.782 정보 [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/9.0.62]
+06-May-2022 16:13:03.790 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/docs]을(를) 배치합니다.
+06-May-2022 16:13:04.099 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/docs]에 대한 배치가 [307] 밀리초에 완료되었습니다.
+06-May-2022 16:13:04.099 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/manager]을(를) 배치합니다.
+06-May-2022 16:13:04.138 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/manager]에 대한 배치가 [39] 밀리초에 완료되었습니다.
+06-May-2022 16:13:04.139 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/examples]을(를) 배치합니다.
+06-May-2022 16:13:04.395 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/examples]에 대한 배치가 [256] 밀리초에 완료되었습니다.
+06-May-2022 16:13:04.395 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/ROOT]을(를) 배치합니다.
+06-May-2022 16:13:04.415 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/ROOT]에 대한 배치가 [20] 밀리초에 완료되었습니다.
+06-May-2022 16:13:04.415 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/host-manager]을(를) 배치합니다.
+06-May-2022 16:13:04.447 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/host-manager]에 대한 배치가 [32] 밀리초에 완료되었습니다.
+06-May-2022 16:13:04.452 정보 [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8080"]을(를) 시작합니다.
+06-May-2022 16:13:04.476 정보 [main] org.apache.catalina.startup.Catalina.start 서버가 [752] 밀리초 내에 시작되었습니다.
+06-May-2022 16:16:13.149 정보 [main] org.apache.catalina.core.StandardServer.await 셧다운 포트를 통해 유효한 셧다운 명령을 받았습니다. 서버 인스턴스를 중지시킵니다.
+06-May-2022 16:16:13.150 정보 [main] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["http-nio-8080"]을(를) 일시 정지 중
+06-May-2022 16:16:13.153 정보 [main] org.apache.catalina.core.StandardService.stopInternal 서비스 [Catalina]을(를) 중지시킵니다.
+06-May-2022 16:16:13.170 정보 [main] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["http-nio-8080"]을(를) 중지시킵니다.
+06-May-2022 16:16:13.180 정보 [main] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["http-nio-8080"]을(를) 소멸시킵니다.
+06-May-2022 16:16:15.420 경고 [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin Match [Server/Service/Connector]이(가) 프로퍼티 [encoding]을(를) [UTF-8](으)로 설정하지 못했습니다.
+06-May-2022 16:16:15.464 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/9.0.62
+06-May-2022 16:16:15.464 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  Mar 31 2022 14:34:15 UTC
+06-May-2022 16:16:15.464 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  9.0.62.0
+06-May-2022 16:16:15.465 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Mac OS X
+06-May-2022 16:16:15.465 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.15.7
+06-May-2022 16:16:15.465 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          x86_64
+06-May-2022 16:16:15.465 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           /Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home
+06-May-2022 16:16:15.466 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          11.0.12+7
+06-May-2022 16:16:15.466 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          Eclipse Foundation
+06-May-2022 16:16:15.466 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     /Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62
+06-May-2022 16:16:15.466 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     /Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62
+06-May-2022 16:16:15.468 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.lang=ALL-UNNAMED
+06-May-2022 16:16:15.468 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.io=ALL-UNNAMED
+06-May-2022 16:16:15.468 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util=ALL-UNNAMED
+06-May-2022 16:16:15.468 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-May-2022 16:16:15.469 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-May-2022 16:16:15.469 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/conf/logging.properties
+06-May-2022 16:16:15.469 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-May-2022 16:16:15.469 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djdk.tls.ephemeralDHKeySize=2048
+06-May-2022 16:16:15.469 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-May-2022 16:16:15.469 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+06-May-2022 16:16:15.470 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dignore.endorsed.dirs=
+06-May-2022 16:16:15.470 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62
+06-May-2022 16:16:15.470 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62
+06-May-2022 16:16:15.470 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/temp
+06-May-2022 16:16:15.473 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 프로덕션 환경들에서 최적의 성능을 제공하는, APR 기반 Apache Tomcat Native 라이브러리가, 다음 java.library.path에서 발견되지 않습니다: [/Users/twoson/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+06-May-2022 16:16:15.785 정보 [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+06-May-2022 16:16:15.815 정보 [main] org.apache.catalina.startup.Catalina.load [564] 밀리초 내에 서버가 초기화되었습니다.
+06-May-2022 16:16:15.861 정보 [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+06-May-2022 16:16:15.861 정보 [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/9.0.62]
+06-May-2022 16:16:15.868 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/docs]을(를) 배치합니다.
+06-May-2022 16:16:16.123 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/docs]에 대한 배치가 [253] 밀리초에 완료되었습니다.
+06-May-2022 16:16:16.124 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/manager]을(를) 배치합니다.
+06-May-2022 16:16:16.154 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/manager]에 대한 배치가 [31] 밀리초에 완료되었습니다.
+06-May-2022 16:16:16.155 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/examples]을(를) 배치합니다.
+06-May-2022 16:16:16.381 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/examples]에 대한 배치가 [226] 밀리초에 완료되었습니다.
+06-May-2022 16:16:16.381 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/ROOT]을(를) 배치합니다.
+06-May-2022 16:16:16.398 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/ROOT]에 대한 배치가 [17] 밀리초에 완료되었습니다.
+06-May-2022 16:16:16.398 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/host-manager]을(를) 배치합니다.
+06-May-2022 16:16:16.417 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/host-manager]에 대한 배치가 [19] 밀리초에 완료되었습니다.
+06-May-2022 16:16:16.422 정보 [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8080"]을(를) 시작합니다.
+06-May-2022 16:16:16.433 정보 [main] org.apache.catalina.startup.Catalina.start 서버가 [617] 밀리초 내에 시작되었습니다.
+06-May-2022 16:17:06.766 정보 [main] org.apache.catalina.core.StandardServer.await 셧다운 포트를 통해 유효한 셧다운 명령을 받았습니다. 서버 인스턴스를 중지시킵니다.
+06-May-2022 16:17:06.767 정보 [main] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["http-nio-8080"]을(를) 일시 정지 중
+06-May-2022 16:17:06.770 정보 [main] org.apache.catalina.core.StandardService.stopInternal 서비스 [Catalina]을(를) 중지시킵니다.
+06-May-2022 16:17:06.791 정보 [main] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["http-nio-8080"]을(를) 중지시킵니다.
+06-May-2022 16:17:06.797 정보 [main] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["http-nio-8080"]을(를) 소멸시킵니다.
+06-May-2022 16:17:08.831 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/9.0.62
+06-May-2022 16:17:08.836 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  Mar 31 2022 14:34:15 UTC
+06-May-2022 16:17:08.837 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  9.0.62.0
+06-May-2022 16:17:08.837 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Mac OS X
+06-May-2022 16:17:08.837 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.15.7
+06-May-2022 16:17:08.837 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          x86_64
+06-May-2022 16:17:08.837 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           /Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home
+06-May-2022 16:17:08.838 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          11.0.12+7
+06-May-2022 16:17:08.838 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          Eclipse Foundation
+06-May-2022 16:17:08.838 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     /Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62
+06-May-2022 16:17:08.838 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     /Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62
+06-May-2022 16:17:08.851 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.lang=ALL-UNNAMED
+06-May-2022 16:17:08.851 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.io=ALL-UNNAMED
+06-May-2022 16:17:08.852 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util=ALL-UNNAMED
+06-May-2022 16:17:08.852 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-May-2022 16:17:08.852 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-May-2022 16:17:08.852 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/conf/logging.properties
+06-May-2022 16:17:08.852 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-May-2022 16:17:08.852 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djdk.tls.ephemeralDHKeySize=2048
+06-May-2022 16:17:08.853 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-May-2022 16:17:08.853 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+06-May-2022 16:17:08.853 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dignore.endorsed.dirs=
+06-May-2022 16:17:08.853 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62
+06-May-2022 16:17:08.853 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62
+06-May-2022 16:17:08.853 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/temp
+06-May-2022 16:17:08.856 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 프로덕션 환경들에서 최적의 성능을 제공하는, APR 기반 Apache Tomcat Native 라이브러리가, 다음 java.library.path에서 발견되지 않습니다: [/Users/twoson/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+06-May-2022 16:17:09.158 정보 [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+06-May-2022 16:17:09.185 정보 [main] org.apache.catalina.startup.Catalina.load [555] 밀리초 내에 서버가 초기화되었습니다.
+06-May-2022 16:17:09.235 정보 [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+06-May-2022 16:17:09.235 정보 [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/9.0.62]
+06-May-2022 16:17:09.242 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/docs]을(를) 배치합니다.
+06-May-2022 16:17:09.505 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/docs]에 대한 배치가 [262] 밀리초에 완료되었습니다.
+06-May-2022 16:17:09.505 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/manager]을(를) 배치합니다.
+06-May-2022 16:17:09.538 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/manager]에 대한 배치가 [33] 밀리초에 완료되었습니다.
+06-May-2022 16:17:09.538 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/examples]을(를) 배치합니다.
+06-May-2022 16:17:09.760 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/examples]에 대한 배치가 [222] 밀리초에 완료되었습니다.
+06-May-2022 16:17:09.760 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/ROOT]을(를) 배치합니다.
+06-May-2022 16:17:09.780 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/ROOT]에 대한 배치가 [20] 밀리초에 완료되었습니다.
+06-May-2022 16:17:09.780 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/host-manager]을(를) 배치합니다.
+06-May-2022 16:17:09.799 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/host-manager]에 대한 배치가 [19] 밀리초에 완료되었습니다.
+06-May-2022 16:17:09.804 정보 [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8080"]을(를) 시작합니다.
+06-May-2022 16:17:09.815 정보 [main] org.apache.catalina.startup.Catalina.start 서버가 [630] 밀리초 내에 시작되었습니다.
+06-May-2022 16:17:30.793 정보 [main] org.apache.catalina.core.StandardServer.await 셧다운 포트를 통해 유효한 셧다운 명령을 받았습니다. 서버 인스턴스를 중지시킵니다.
+06-May-2022 16:17:30.794 정보 [main] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["http-nio-8080"]을(를) 일시 정지 중
+06-May-2022 16:17:30.798 정보 [main] org.apache.catalina.core.StandardService.stopInternal 서비스 [Catalina]을(를) 중지시킵니다.
+06-May-2022 16:17:30.817 정보 [main] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["http-nio-8080"]을(를) 중지시킵니다.
+06-May-2022 16:17:30.825 정보 [main] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["http-nio-8080"]을(를) 소멸시킵니다.
+06-May-2022 16:17:36.624 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/9.0.62
+06-May-2022 16:17:36.630 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  Mar 31 2022 14:34:15 UTC
+06-May-2022 16:17:36.630 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  9.0.62.0
+06-May-2022 16:17:36.630 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Mac OS X
+06-May-2022 16:17:36.631 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.15.7
+06-May-2022 16:17:36.631 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          x86_64
+06-May-2022 16:17:36.631 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           /Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home
+06-May-2022 16:17:36.631 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          11.0.12+7
+06-May-2022 16:17:36.632 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          Eclipse Foundation
+06-May-2022 16:17:36.632 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     /Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62
+06-May-2022 16:17:36.632 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     /Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62
+06-May-2022 16:17:36.644 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.lang=ALL-UNNAMED
+06-May-2022 16:17:36.645 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.io=ALL-UNNAMED
+06-May-2022 16:17:36.645 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util=ALL-UNNAMED
+06-May-2022 16:17:36.645 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-May-2022 16:17:36.645 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-May-2022 16:17:36.645 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/conf/logging.properties
+06-May-2022 16:17:36.645 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-May-2022 16:17:36.646 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djdk.tls.ephemeralDHKeySize=2048
+06-May-2022 16:17:36.646 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-May-2022 16:17:36.646 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+06-May-2022 16:17:36.646 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dignore.endorsed.dirs=
+06-May-2022 16:17:36.646 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62
+06-May-2022 16:17:36.646 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62
+06-May-2022 16:17:36.646 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/temp
+06-May-2022 16:17:36.649 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 프로덕션 환경들에서 최적의 성능을 제공하는, APR 기반 Apache Tomcat Native 라이브러리가, 다음 java.library.path에서 발견되지 않습니다: [/Users/twoson/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+06-May-2022 16:17:36.942 정보 [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+06-May-2022 16:17:36.968 정보 [main] org.apache.catalina.startup.Catalina.load [556] 밀리초 내에 서버가 초기화되었습니다.
+06-May-2022 16:17:37.016 정보 [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+06-May-2022 16:17:37.016 정보 [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/9.0.62]
+06-May-2022 16:17:37.022 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/docs]을(를) 배치합니다.
+06-May-2022 16:17:37.276 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/docs]에 대한 배치가 [252] 밀리초에 완료되었습니다.
+06-May-2022 16:17:37.276 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/manager]을(를) 배치합니다.
+06-May-2022 16:17:37.309 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/manager]에 대한 배치가 [33] 밀리초에 완료되었습니다.
+06-May-2022 16:17:37.310 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/examples]을(를) 배치합니다.
+06-May-2022 16:17:37.538 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/examples]에 대한 배치가 [228] 밀리초에 완료되었습니다.
+06-May-2022 16:17:37.538 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/ROOT]을(를) 배치합니다.
+06-May-2022 16:17:37.557 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/ROOT]에 대한 배치가 [19] 밀리초에 완료되었습니다.
+06-May-2022 16:17:37.557 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/host-manager]을(를) 배치합니다.
+06-May-2022 16:17:37.575 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/host-manager]에 대한 배치가 [18] 밀리초에 완료되었습니다.
+06-May-2022 16:17:37.580 정보 [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8080"]을(를) 시작합니다.
+06-May-2022 16:17:37.591 정보 [main] org.apache.catalina.startup.Catalina.start 서버가 [622] 밀리초 내에 시작되었습니다.
+06-May-2022 16:22:37.716 정보 [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload 컨텍스트 []을(를) 다시 로드합니다.
+06-May-2022 16:22:37.717 정보 [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload 이름이 []인 컨텍스트를 다시 로드하는 작업이 시작되었습니다.
+06-May-2022 16:22:37.759 정보 [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload 이름이 []인 컨텍스트를 다시 로드하는 것을 완료했습니다.
+06-May-2022 16:22:37.759 정보 [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload 컨텍스트 [/examples]을(를) 다시 로드합니다.
+06-May-2022 16:22:37.760 정보 [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload 이름이 [/examples]인 컨텍스트를 다시 로드하는 작업이 시작되었습니다.
+06-May-2022 16:22:37.949 정보 [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload 이름이 [/examples]인 컨텍스트를 다시 로드하는 것을 완료했습니다.
+06-May-2022 16:22:37.949 정보 [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload 컨텍스트 [/host-manager]을(를) 다시 로드합니다.
+06-May-2022 16:22:37.949 정보 [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload 이름이 [/host-manager]인 컨텍스트를 다시 로드하는 작업이 시작되었습니다.
+06-May-2022 16:22:37.966 정보 [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload 이름이 [/host-manager]인 컨텍스트를 다시 로드하는 것을 완료했습니다.
+06-May-2022 16:22:37.966 정보 [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload 컨텍스트 [/manager]을(를) 다시 로드합니다.
+06-May-2022 16:22:37.966 정보 [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload 이름이 [/manager]인 컨텍스트를 다시 로드하는 작업이 시작되었습니다.
+06-May-2022 16:22:37.984 정보 [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload 이름이 [/manager]인 컨텍스트를 다시 로드하는 것을 완료했습니다.
+06-May-2022 16:22:37.984 정보 [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload 컨텍스트 [/docs]을(를) 다시 로드합니다.
+06-May-2022 16:22:37.984 정보 [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload 이름이 [/docs]인 컨텍스트를 다시 로드하는 작업이 시작되었습니다.
+06-May-2022 16:22:37.997 정보 [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload 이름이 [/docs]인 컨텍스트를 다시 로드하는 것을 완료했습니다.
+06-May-2022 16:23:08.014 정보 [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload 컨텍스트 []을(를) 다시 로드합니다.
+06-May-2022 16:23:08.014 정보 [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload 이름이 []인 컨텍스트를 다시 로드하는 작업이 시작되었습니다.
+06-May-2022 16:23:08.040 정보 [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload 이름이 []인 컨텍스트를 다시 로드하는 것을 완료했습니다.
+06-May-2022 16:23:08.040 정보 [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload 컨텍스트 [/examples]을(를) 다시 로드합니다.
+06-May-2022 16:23:08.040 정보 [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload 이름이 [/examples]인 컨텍스트를 다시 로드하는 작업이 시작되었습니다.
+06-May-2022 16:23:08.154 정보 [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload 이름이 [/examples]인 컨텍스트를 다시 로드하는 것을 완료했습니다.
+06-May-2022 16:23:08.154 정보 [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload 컨텍스트 [/host-manager]을(를) 다시 로드합니다.
+06-May-2022 16:23:08.154 정보 [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload 이름이 [/host-manager]인 컨텍스트를 다시 로드하는 작업이 시작되었습니다.
+06-May-2022 16:23:08.170 정보 [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload 이름이 [/host-manager]인 컨텍스트를 다시 로드하는 것을 완료했습니다.
+06-May-2022 16:23:08.171 정보 [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload 컨텍스트 [/manager]을(를) 다시 로드합니다.
+06-May-2022 16:23:08.171 정보 [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload 이름이 [/manager]인 컨텍스트를 다시 로드하는 작업이 시작되었습니다.
+06-May-2022 16:23:08.187 정보 [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload 이름이 [/manager]인 컨텍스트를 다시 로드하는 것을 완료했습니다.
+06-May-2022 16:23:08.187 정보 [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload 컨텍스트 [/docs]을(를) 다시 로드합니다.
+06-May-2022 16:23:08.188 정보 [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload 이름이 [/docs]인 컨텍스트를 다시 로드하는 작업이 시작되었습니다.
+06-May-2022 16:23:08.200 정보 [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload 이름이 [/docs]인 컨텍스트를 다시 로드하는 것을 완료했습니다.
+06-May-2022 16:24:01.063 정보 [main] org.apache.catalina.core.StandardServer.await 셧다운 포트를 통해 유효한 셧다운 명령을 받았습니다. 서버 인스턴스를 중지시킵니다.
+06-May-2022 16:24:01.064 정보 [main] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["http-nio-8080"]을(를) 일시 정지 중
+06-May-2022 16:24:01.067 정보 [main] org.apache.catalina.core.StandardService.stopInternal 서비스 [Catalina]을(를) 중지시킵니다.
+06-May-2022 16:24:01.082 정보 [main] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["http-nio-8080"]을(를) 중지시킵니다.
+06-May-2022 16:24:01.093 정보 [main] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["http-nio-8080"]을(를) 소멸시킵니다.
+06-May-2022 16:24:03.376 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/9.0.62
+06-May-2022 16:24:03.380 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  Mar 31 2022 14:34:15 UTC
+06-May-2022 16:24:03.381 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  9.0.62.0
+06-May-2022 16:24:03.381 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Mac OS X
+06-May-2022 16:24:03.381 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.15.7
+06-May-2022 16:24:03.381 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          x86_64
+06-May-2022 16:24:03.382 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           /Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home
+06-May-2022 16:24:03.382 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          11.0.12+7
+06-May-2022 16:24:03.382 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          Eclipse Foundation
+06-May-2022 16:24:03.382 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     /Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62
+06-May-2022 16:24:03.382 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     /Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62
+06-May-2022 16:24:03.396 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.lang=ALL-UNNAMED
+06-May-2022 16:24:03.396 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.io=ALL-UNNAMED
+06-May-2022 16:24:03.396 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util=ALL-UNNAMED
+06-May-2022 16:24:03.396 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-May-2022 16:24:03.396 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-May-2022 16:24:03.396 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/conf/logging.properties
+06-May-2022 16:24:03.397 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-May-2022 16:24:03.397 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djdk.tls.ephemeralDHKeySize=2048
+06-May-2022 16:24:03.397 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-May-2022 16:24:03.397 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+06-May-2022 16:24:03.398 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dignore.endorsed.dirs=
+06-May-2022 16:24:03.398 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62
+06-May-2022 16:24:03.398 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62
+06-May-2022 16:24:03.398 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/temp
+06-May-2022 16:24:03.400 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 프로덕션 환경들에서 최적의 성능을 제공하는, APR 기반 Apache Tomcat Native 라이브러리가, 다음 java.library.path에서 발견되지 않습니다: [/Users/twoson/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+06-May-2022 16:24:03.697 정보 [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+06-May-2022 16:24:03.724 정보 [main] org.apache.catalina.startup.Catalina.load [556] 밀리초 내에 서버가 초기화되었습니다.
+06-May-2022 16:24:03.773 정보 [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+06-May-2022 16:24:03.773 정보 [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/9.0.62]
+06-May-2022 16:24:03.780 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/docs]을(를) 배치합니다.
+06-May-2022 16:24:04.034 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/docs]에 대한 배치가 [252] 밀리초에 완료되었습니다.
+06-May-2022 16:24:04.035 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/manager]을(를) 배치합니다.
+06-May-2022 16:24:04.064 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/manager]에 대한 배치가 [30] 밀리초에 완료되었습니다.
+06-May-2022 16:24:04.065 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/examples]을(를) 배치합니다.
+06-May-2022 16:24:04.287 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/examples]에 대한 배치가 [222] 밀리초에 완료되었습니다.
+06-May-2022 16:24:04.287 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/ROOT]을(를) 배치합니다.
+06-May-2022 16:24:04.302 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/ROOT]에 대한 배치가 [15] 밀리초에 완료되었습니다.
+06-May-2022 16:24:04.302 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/host-manager]을(를) 배치합니다.
+06-May-2022 16:24:04.321 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/host-manager]에 대한 배치가 [19] 밀리초에 완료되었습니다.
+06-May-2022 16:24:04.326 정보 [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8080"]을(를) 시작합니다.
+06-May-2022 16:24:04.337 정보 [main] org.apache.catalina.startup.Catalina.start 서버가 [612] 밀리초 내에 시작되었습니다.
+06-May-2022 16:24:20.554 정보 [main] org.apache.catalina.core.StandardServer.await 셧다운 포트를 통해 유효한 셧다운 명령을 받았습니다. 서버 인스턴스를 중지시킵니다.
+06-May-2022 16:24:20.555 정보 [main] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["http-nio-8080"]을(를) 일시 정지 중
+06-May-2022 16:24:20.560 정보 [main] org.apache.catalina.core.StandardService.stopInternal 서비스 [Catalina]을(를) 중지시킵니다.
+06-May-2022 16:24:20.583 정보 [main] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["http-nio-8080"]을(를) 중지시킵니다.
+06-May-2022 16:24:20.599 정보 [main] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["http-nio-8080"]을(를) 소멸시킵니다.
+06-May-2022 16:24:28.061 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/9.0.62
+06-May-2022 16:24:28.066 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  Mar 31 2022 14:34:15 UTC
+06-May-2022 16:24:28.066 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  9.0.62.0
+06-May-2022 16:24:28.067 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Mac OS X
+06-May-2022 16:24:28.067 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.15.7
+06-May-2022 16:24:28.067 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          x86_64
+06-May-2022 16:24:28.067 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           /Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home
+06-May-2022 16:24:28.067 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          11.0.12+7
+06-May-2022 16:24:28.067 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          Eclipse Foundation
+06-May-2022 16:24:28.068 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     /Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62
+06-May-2022 16:24:28.068 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     /Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62
+06-May-2022 16:24:28.083 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.lang=ALL-UNNAMED
+06-May-2022 16:24:28.083 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.io=ALL-UNNAMED
+06-May-2022 16:24:28.083 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util=ALL-UNNAMED
+06-May-2022 16:24:28.083 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-May-2022 16:24:28.083 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-May-2022 16:24:28.084 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/conf/logging.properties
+06-May-2022 16:24:28.084 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-May-2022 16:24:28.084 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djdk.tls.ephemeralDHKeySize=2048
+06-May-2022 16:24:28.084 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-May-2022 16:24:28.085 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+06-May-2022 16:24:28.085 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dignore.endorsed.dirs=
+06-May-2022 16:24:28.085 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62
+06-May-2022 16:24:28.085 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62
+06-May-2022 16:24:28.085 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/temp
+06-May-2022 16:24:28.087 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 프로덕션 환경들에서 최적의 성능을 제공하는, APR 기반 Apache Tomcat Native 라이브러리가, 다음 java.library.path에서 발견되지 않습니다: [/Users/twoson/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+06-May-2022 16:24:28.384 정보 [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+06-May-2022 16:24:28.420 정보 [main] org.apache.catalina.startup.Catalina.load [567] 밀리초 내에 서버가 초기화되었습니다.
+06-May-2022 16:24:28.472 정보 [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+06-May-2022 16:24:28.472 정보 [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/9.0.62]
+06-May-2022 16:24:28.479 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/docs]을(를) 배치합니다.
+06-May-2022 16:24:28.724 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/docs]에 대한 배치가 [244] 밀리초에 완료되었습니다.
+06-May-2022 16:24:28.725 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/manager]을(를) 배치합니다.
+06-May-2022 16:24:28.755 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/manager]에 대한 배치가 [30] 밀리초에 완료되었습니다.
+06-May-2022 16:24:28.755 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/examples]을(를) 배치합니다.
+06-May-2022 16:24:28.979 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/examples]에 대한 배치가 [223] 밀리초에 완료되었습니다.
+06-May-2022 16:24:28.979 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/ROOT]을(를) 배치합니다.
+06-May-2022 16:24:29.002 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/ROOT]에 대한 배치가 [22] 밀리초에 완료되었습니다.
+06-May-2022 16:24:29.002 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/host-manager]을(를) 배치합니다.
+06-May-2022 16:24:29.029 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/host-manager]에 대한 배치가 [26] 밀리초에 완료되었습니다.
+06-May-2022 16:24:29.034 정보 [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8080"]을(를) 시작합니다.
+06-May-2022 16:24:29.047 정보 [main] org.apache.catalina.startup.Catalina.start 서버가 [627] 밀리초 내에 시작되었습니다.
+06-May-2022 16:24:59.053 정보 [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload 컨텍스트 []을(를) 다시 로드합니다.
+06-May-2022 16:24:59.055 정보 [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload 이름이 []인 컨텍스트를 다시 로드하는 작업이 시작되었습니다.
+06-May-2022 16:24:59.099 정보 [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload 이름이 []인 컨텍스트를 다시 로드하는 것을 완료했습니다.
+06-May-2022 16:24:59.100 정보 [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload 컨텍스트 [/examples]을(를) 다시 로드합니다.
+06-May-2022 16:24:59.100 정보 [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload 이름이 [/examples]인 컨텍스트를 다시 로드하는 작업이 시작되었습니다.
+06-May-2022 16:24:59.256 정보 [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload 이름이 [/examples]인 컨텍스트를 다시 로드하는 것을 완료했습니다.
+06-May-2022 16:24:59.256 정보 [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload 컨텍스트 [/host-manager]을(를) 다시 로드합니다.
+06-May-2022 16:24:59.257 정보 [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload 이름이 [/host-manager]인 컨텍스트를 다시 로드하는 작업이 시작되었습니다.
+06-May-2022 16:24:59.276 정보 [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload 이름이 [/host-manager]인 컨텍스트를 다시 로드하는 것을 완료했습니다.
+06-May-2022 16:24:59.276 정보 [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload 컨텍스트 [/manager]을(를) 다시 로드합니다.
+06-May-2022 16:24:59.277 정보 [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload 이름이 [/manager]인 컨텍스트를 다시 로드하는 작업이 시작되었습니다.
+06-May-2022 16:24:59.297 정보 [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload 이름이 [/manager]인 컨텍스트를 다시 로드하는 것을 완료했습니다.
+06-May-2022 16:24:59.297 정보 [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload 컨텍스트 [/docs]을(를) 다시 로드합니다.
+06-May-2022 16:24:59.298 정보 [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload 이름이 [/docs]인 컨텍스트를 다시 로드하는 작업이 시작되었습니다.
+06-May-2022 16:24:59.313 정보 [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload 이름이 [/docs]인 컨텍스트를 다시 로드하는 것을 완료했습니다.
+06-May-2022 16:25:19.325 정보 [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload 컨텍스트 []을(를) 다시 로드합니다.
+06-May-2022 16:25:19.325 정보 [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload 이름이 []인 컨텍스트를 다시 로드하는 작업이 시작되었습니다.
+06-May-2022 16:25:19.353 정보 [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload 이름이 []인 컨텍스트를 다시 로드하는 것을 완료했습니다.
+06-May-2022 16:25:19.354 정보 [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload 컨텍스트 [/examples]을(를) 다시 로드합니다.
+06-May-2022 16:25:19.354 정보 [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload 이름이 [/examples]인 컨텍스트를 다시 로드하는 작업이 시작되었습니다.
+06-May-2022 16:25:19.480 정보 [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload 이름이 [/examples]인 컨텍스트를 다시 로드하는 것을 완료했습니다.
+06-May-2022 16:25:19.480 정보 [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload 컨텍스트 [/host-manager]을(를) 다시 로드합니다.
+06-May-2022 16:25:19.480 정보 [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload 이름이 [/host-manager]인 컨텍스트를 다시 로드하는 작업이 시작되었습니다.
+06-May-2022 16:25:19.494 정보 [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload 이름이 [/host-manager]인 컨텍스트를 다시 로드하는 것을 완료했습니다.
+06-May-2022 16:25:19.495 정보 [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload 컨텍스트 [/manager]을(를) 다시 로드합니다.
+06-May-2022 16:25:19.495 정보 [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload 이름이 [/manager]인 컨텍스트를 다시 로드하는 작업이 시작되었습니다.
+06-May-2022 16:25:19.509 정보 [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload 이름이 [/manager]인 컨텍스트를 다시 로드하는 것을 완료했습니다.
+06-May-2022 16:25:19.509 정보 [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload 컨텍스트 [/docs]을(를) 다시 로드합니다.
+06-May-2022 16:25:19.509 정보 [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload 이름이 [/docs]인 컨텍스트를 다시 로드하는 작업이 시작되었습니다.
+06-May-2022 16:25:19.522 정보 [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload 이름이 [/docs]인 컨텍스트를 다시 로드하는 것을 완료했습니다.
+06-May-2022 16:25:29.528 정보 [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload 컨텍스트 []을(를) 다시 로드합니다.
+06-May-2022 16:25:29.528 정보 [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload 이름이 []인 컨텍스트를 다시 로드하는 작업이 시작되었습니다.
+06-May-2022 16:25:29.552 정보 [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload 이름이 []인 컨텍스트를 다시 로드하는 것을 완료했습니다.
+06-May-2022 16:25:29.553 정보 [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload 컨텍스트 [/examples]을(를) 다시 로드합니다.
+06-May-2022 16:25:29.553 정보 [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload 이름이 [/examples]인 컨텍스트를 다시 로드하는 작업이 시작되었습니다.
+06-May-2022 16:25:29.671 정보 [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload 이름이 [/examples]인 컨텍스트를 다시 로드하는 것을 완료했습니다.
+06-May-2022 16:25:29.671 정보 [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload 컨텍스트 [/host-manager]을(를) 다시 로드합니다.
+06-May-2022 16:25:29.671 정보 [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload 이름이 [/host-manager]인 컨텍스트를 다시 로드하는 작업이 시작되었습니다.
+06-May-2022 16:25:29.684 정보 [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload 이름이 [/host-manager]인 컨텍스트를 다시 로드하는 것을 완료했습니다.
+06-May-2022 16:25:29.685 정보 [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload 컨텍스트 [/manager]을(를) 다시 로드합니다.
+06-May-2022 16:25:29.685 정보 [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload 이름이 [/manager]인 컨텍스트를 다시 로드하는 작업이 시작되었습니다.
+06-May-2022 16:25:29.702 정보 [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload 이름이 [/manager]인 컨텍스트를 다시 로드하는 것을 완료했습니다.
+06-May-2022 16:25:29.702 정보 [Catalina-utility-2] org.apache.catalina.startup.HostConfig.reload 컨텍스트 [/docs]을(를) 다시 로드합니다.
+06-May-2022 16:25:29.702 정보 [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload 이름이 [/docs]인 컨텍스트를 다시 로드하는 작업이 시작되었습니다.
+06-May-2022 16:25:29.715 정보 [Catalina-utility-2] org.apache.catalina.core.StandardContext.reload 이름이 [/docs]인 컨텍스트를 다시 로드하는 것을 완료했습니다.
+06-May-2022 16:25:51.601 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/9.0.62
+06-May-2022 16:25:51.606 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  Mar 31 2022 14:34:15 UTC
+06-May-2022 16:25:51.606 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  9.0.62.0
+06-May-2022 16:25:51.606 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Mac OS X
+06-May-2022 16:25:51.606 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.15.7
+06-May-2022 16:25:51.607 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          x86_64
+06-May-2022 16:25:51.607 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           /Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home
+06-May-2022 16:25:51.607 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          11.0.12+7
+06-May-2022 16:25:51.607 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          Eclipse Foundation
+06-May-2022 16:25:51.607 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     /Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62
+06-May-2022 16:25:51.608 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     /Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62
+06-May-2022 16:25:51.621 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.lang=ALL-UNNAMED
+06-May-2022 16:25:51.622 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.io=ALL-UNNAMED
+06-May-2022 16:25:51.622 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util=ALL-UNNAMED
+06-May-2022 16:25:51.622 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-May-2022 16:25:51.622 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-May-2022 16:25:51.623 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/conf/logging.properties
+06-May-2022 16:25:51.623 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-May-2022 16:25:51.623 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djdk.tls.ephemeralDHKeySize=2048
+06-May-2022 16:25:51.623 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-May-2022 16:25:51.623 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+06-May-2022 16:25:51.623 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dignore.endorsed.dirs=
+06-May-2022 16:25:51.623 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62
+06-May-2022 16:25:51.624 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62
+06-May-2022 16:25:51.624 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/temp
+06-May-2022 16:25:51.626 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 프로덕션 환경들에서 최적의 성능을 제공하는, APR 기반 Apache Tomcat Native 라이브러리가, 다음 java.library.path에서 발견되지 않습니다: [/Users/twoson/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+06-May-2022 16:25:51.925 정보 [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+06-May-2022 16:25:51.943 심각 [main] org.apache.catalina.util.LifecycleBase.handleSubClassException 구성요소 [Connector[HTTP/1.1-8080]]을(를) 초기화하지 못했습니다.
+	org.apache.catalina.LifecycleException: 프로토콜 핸들러 초기화가 실패했습니다.
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1049)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:556)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1042)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:724)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:760)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+	Caused by: java.net.BindException: Address already in use
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:455)
+		at java.base/sun.nio.ch.Net.bind(Net.java:447)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:274)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:229)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1227)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1240)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:603)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:80)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1046)
+		... 13 more
+06-May-2022 16:25:51.944 정보 [main] org.apache.catalina.startup.Catalina.load [547] 밀리초 내에 서버가 초기화되었습니다.
+06-May-2022 16:25:51.994 정보 [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+06-May-2022 16:25:51.994 정보 [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/9.0.62]
+06-May-2022 16:25:52.001 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/docs]을(를) 배치합니다.
+06-May-2022 16:25:52.256 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/docs]에 대한 배치가 [253] 밀리초에 완료되었습니다.
+06-May-2022 16:25:52.256 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/manager]을(를) 배치합니다.
+06-May-2022 16:25:52.286 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/manager]에 대한 배치가 [29] 밀리초에 완료되었습니다.
+06-May-2022 16:25:52.286 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/examples]을(를) 배치합니다.
+06-May-2022 16:25:52.511 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/examples]에 대한 배치가 [225] 밀리초에 완료되었습니다.
+06-May-2022 16:25:52.512 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/ROOT]을(를) 배치합니다.
+06-May-2022 16:25:52.527 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/ROOT]에 대한 배치가 [15] 밀리초에 완료되었습니다.
+06-May-2022 16:25:52.528 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/host-manager]을(를) 배치합니다.
+06-May-2022 16:25:52.547 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/host-manager]에 대한 배치가 [19] 밀리초에 완료되었습니다.
+06-May-2022 16:25:52.553 정보 [main] org.apache.catalina.startup.Catalina.start 서버가 [608] 밀리초 내에 시작되었습니다.
+06-May-2022 16:25:52.557 심각 [main] org.apache.catalina.core.StandardServer.await 주소 [localhost]와(과) 포트 [8005]에, 서버 셧다운 소켓을 생성하지 못했습니다. (base 포트 [8005], offset [0])
+	java.net.BindException: Address already in use (Bind failed)
+		at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+		at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:577)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:864)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:810)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+06-May-2022 16:25:52.558 정보 [main] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["http-nio-8080"]을(를) 일시 정지 중
+06-May-2022 16:25:52.558 정보 [main] org.apache.catalina.core.StandardService.stopInternal 서비스 [Catalina]을(를) 중지시킵니다.
+06-May-2022 16:25:52.579 정보 [main] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["http-nio-8080"]을(를) 중지시킵니다.
+06-May-2022 16:25:52.580 정보 [main] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["http-nio-8080"]을(를) 소멸시킵니다.
+06-May-2022 16:26:02.459 정보 [main] org.apache.catalina.core.StandardServer.await 셧다운 포트를 통해 유효한 셧다운 명령을 받았습니다. 서버 인스턴스를 중지시킵니다.
+06-May-2022 16:26:02.459 정보 [main] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["http-nio-8080"]을(를) 일시 정지 중
+06-May-2022 16:26:02.462 정보 [main] org.apache.catalina.core.StandardService.stopInternal 서비스 [Catalina]을(를) 중지시킵니다.
+06-May-2022 16:26:02.478 정보 [main] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["http-nio-8080"]을(를) 중지시킵니다.
+06-May-2022 16:26:02.486 정보 [main] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["http-nio-8080"]을(를) 소멸시킵니다.
+06-May-2022 16:28:07.610 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/9.0.62
+06-May-2022 16:28:07.616 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  Mar 31 2022 14:34:15 UTC
+06-May-2022 16:28:07.616 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  9.0.62.0
+06-May-2022 16:28:07.616 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Mac OS X
+06-May-2022 16:28:07.616 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.15.7
+06-May-2022 16:28:07.616 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          x86_64
+06-May-2022 16:28:07.617 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           /Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home
+06-May-2022 16:28:07.617 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          11.0.12+7
+06-May-2022 16:28:07.617 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          Eclipse Foundation
+06-May-2022 16:28:07.617 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     /Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62
+06-May-2022 16:28:07.617 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     /Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62
+06-May-2022 16:28:07.631 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.lang=ALL-UNNAMED
+06-May-2022 16:28:07.631 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.io=ALL-UNNAMED
+06-May-2022 16:28:07.631 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util=ALL-UNNAMED
+06-May-2022 16:28:07.631 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-May-2022 16:28:07.631 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-May-2022 16:28:07.631 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/conf/logging.properties
+06-May-2022 16:28:07.632 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-May-2022 16:28:07.632 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djdk.tls.ephemeralDHKeySize=2048
+06-May-2022 16:28:07.632 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-May-2022 16:28:07.632 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+06-May-2022 16:28:07.632 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dignore.endorsed.dirs=
+06-May-2022 16:28:07.632 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62
+06-May-2022 16:28:07.632 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62
+06-May-2022 16:28:07.632 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/temp
+06-May-2022 16:28:07.635 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 프로덕션 환경들에서 최적의 성능을 제공하는, APR 기반 Apache Tomcat Native 라이브러리가, 다음 java.library.path에서 발견되지 않습니다: [/Users/twoson/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+06-May-2022 16:28:07.985 정보 [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+06-May-2022 16:28:08.016 정보 [main] org.apache.catalina.startup.Catalina.load [610] 밀리초 내에 서버가 초기화되었습니다.
+06-May-2022 16:28:08.072 정보 [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+06-May-2022 16:28:08.073 정보 [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/9.0.62]
+06-May-2022 16:28:08.082 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/docs]을(를) 배치합니다.
+06-May-2022 16:28:08.368 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/docs]에 대한 배치가 [284] 밀리초에 완료되었습니다.
+06-May-2022 16:28:08.369 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/manager]을(를) 배치합니다.
+06-May-2022 16:28:08.401 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/manager]에 대한 배치가 [33] 밀리초에 완료되었습니다.
+06-May-2022 16:28:08.402 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/examples]을(를) 배치합니다.
+06-May-2022 16:28:08.623 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/examples]에 대한 배치가 [220] 밀리초에 완료되었습니다.
+06-May-2022 16:28:08.623 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/ROOT]을(를) 배치합니다.
+06-May-2022 16:28:08.638 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/ROOT]에 대한 배치가 [15] 밀리초에 완료되었습니다.
+06-May-2022 16:28:08.639 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/host-manager]을(를) 배치합니다.
+06-May-2022 16:28:08.660 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/host-manager]에 대한 배치가 [21] 밀리초에 완료되었습니다.
+06-May-2022 16:28:08.665 정보 [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8080"]을(를) 시작합니다.
+06-May-2022 16:28:08.676 정보 [main] org.apache.catalina.startup.Catalina.start 서버가 [659] 밀리초 내에 시작되었습니다.
+06-May-2022 16:43:38.278 정보 [main] org.apache.catalina.core.StandardServer.await 셧다운 포트를 통해 유효한 셧다운 명령을 받았습니다. 서버 인스턴스를 중지시킵니다.
+06-May-2022 16:43:38.279 정보 [main] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["http-nio-8080"]을(를) 일시 정지 중
+06-May-2022 16:43:38.282 정보 [main] org.apache.catalina.core.StandardService.stopInternal 서비스 [Catalina]을(를) 중지시킵니다.
+06-May-2022 16:43:38.305 정보 [main] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["http-nio-8080"]을(를) 중지시킵니다.
+06-May-2022 16:43:38.309 정보 [main] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["http-nio-8080"]을(를) 소멸시킵니다.
+06-May-2022 16:43:41.424 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/9.0.62
+06-May-2022 16:43:41.430 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  Mar 31 2022 14:34:15 UTC
+06-May-2022 16:43:41.431 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  9.0.62.0
+06-May-2022 16:43:41.431 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Mac OS X
+06-May-2022 16:43:41.431 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.15.7
+06-May-2022 16:43:41.432 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          x86_64
+06-May-2022 16:43:41.432 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           /Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home
+06-May-2022 16:43:41.432 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          11.0.12+7
+06-May-2022 16:43:41.432 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          Eclipse Foundation
+06-May-2022 16:43:41.432 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     /Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62
+06-May-2022 16:43:41.433 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     /Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62
+06-May-2022 16:43:41.448 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.lang=ALL-UNNAMED
+06-May-2022 16:43:41.449 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.io=ALL-UNNAMED
+06-May-2022 16:43:41.449 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util=ALL-UNNAMED
+06-May-2022 16:43:41.449 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-May-2022 16:43:41.449 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-May-2022 16:43:41.449 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/conf/logging.properties
+06-May-2022 16:43:41.450 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-May-2022 16:43:41.450 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djdk.tls.ephemeralDHKeySize=2048
+06-May-2022 16:43:41.450 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-May-2022 16:43:41.450 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+06-May-2022 16:43:41.450 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dignore.endorsed.dirs=
+06-May-2022 16:43:41.451 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62
+06-May-2022 16:43:41.451 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62
+06-May-2022 16:43:41.451 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/temp
+06-May-2022 16:43:41.453 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 프로덕션 환경들에서 최적의 성능을 제공하는, APR 기반 Apache Tomcat Native 라이브러리가, 다음 java.library.path에서 발견되지 않습니다: [/Users/twoson/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+06-May-2022 16:43:41.859 정보 [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+06-May-2022 16:43:41.895 정보 [main] org.apache.catalina.startup.Catalina.load [705] 밀리초 내에 서버가 초기화되었습니다.
+06-May-2022 16:43:41.966 정보 [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+06-May-2022 16:43:41.967 정보 [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/9.0.62]
+06-May-2022 16:43:41.975 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/docs]을(를) 배치합니다.
+06-May-2022 16:43:42.291 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/docs]에 대한 배치가 [313] 밀리초에 완료되었습니다.
+06-May-2022 16:43:42.292 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/manager]을(를) 배치합니다.
+06-May-2022 16:43:42.331 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/manager]에 대한 배치가 [40] 밀리초에 완료되었습니다.
+06-May-2022 16:43:42.332 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/examples]을(를) 배치합니다.
+06-May-2022 16:43:42.630 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/examples]에 대한 배치가 [298] 밀리초에 완료되었습니다.
+06-May-2022 16:43:42.630 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/ROOT]을(를) 배치합니다.
+06-May-2022 16:43:42.651 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/ROOT]에 대한 배치가 [21] 밀리초에 완료되었습니다.
+06-May-2022 16:43:42.651 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/host-manager]을(를) 배치합니다.
+06-May-2022 16:43:42.676 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/host-manager]에 대한 배치가 [25] 밀리초에 완료되었습니다.
+06-May-2022 16:43:42.683 정보 [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8080"]을(를) 시작합니다.
+06-May-2022 16:43:42.698 정보 [main] org.apache.catalina.startup.Catalina.start 서버가 [802] 밀리초 내에 시작되었습니다.
+06-May-2022 16:44:22.705 정보 [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/it]을(를) 배치합니다.
+06-May-2022 16:44:22.790 정보 [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/it]에 대한 배치가 [85] 밀리초에 완료되었습니다.
+06-May-2022 16:44:33.295 정보 [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy 컨텍스트 [/it]의 배치를 제거합니다.
+06-May-2022 16:44:33.310 정보 [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/ITWebRoot]을(를) 배치합니다.
+06-May-2022 16:44:33.331 정보 [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/ITWebRoot]에 대한 배치가 [21] 밀리초에 완료되었습니다.
+06-May-2022 16:44:53.840 정보 [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy 컨텍스트 [/ITWebRoot]의 배치를 제거합니다.
+06-May-2022 16:44:53.846 정보 [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/ITWeb]을(를) 배치합니다.
+06-May-2022 16:44:53.865 정보 [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/ITWeb]에 대한 배치가 [18] 밀리초에 완료되었습니다.
+06-May-2022 16:48:26.644 정보 [main] org.apache.catalina.core.StandardServer.await 셧다운 포트를 통해 유효한 셧다운 명령을 받았습니다. 서버 인스턴스를 중지시킵니다.
+06-May-2022 16:48:26.645 정보 [main] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["http-nio-8080"]을(를) 일시 정지 중
+06-May-2022 16:48:26.648 정보 [main] org.apache.catalina.core.StandardService.stopInternal 서비스 [Catalina]을(를) 중지시킵니다.
+06-May-2022 16:48:26.668 정보 [main] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["http-nio-8080"]을(를) 중지시킵니다.
+06-May-2022 16:48:26.674 정보 [main] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["http-nio-8080"]을(를) 소멸시킵니다.
+06-May-2022 16:48:32.842 경고 [main] org.apache.catalina.core.StandardContext.setPath 컨텍스트 경로는 반드시 빈 문자열이거나, 또는 '/'로 시작하고 '/'로 끝나지 않는 문자열이어야 합니다. 해당 경로 [it]은(는) 이 조건을 충족시키지 않아 [/it](으)로 변경되었습니다.
+06-May-2022 16:48:32.869 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/9.0.62
+06-May-2022 16:48:32.869 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  Mar 31 2022 14:34:15 UTC
+06-May-2022 16:48:32.870 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  9.0.62.0
+06-May-2022 16:48:32.870 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Mac OS X
+06-May-2022 16:48:32.870 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.15.7
+06-May-2022 16:48:32.871 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          x86_64
+06-May-2022 16:48:32.871 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           /Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home
+06-May-2022 16:48:32.871 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          11.0.12+7
+06-May-2022 16:48:32.871 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          Eclipse Foundation
+06-May-2022 16:48:32.871 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     /Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62
+06-May-2022 16:48:32.871 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     /Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62
+06-May-2022 16:48:32.874 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.lang=ALL-UNNAMED
+06-May-2022 16:48:32.875 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.io=ALL-UNNAMED
+06-May-2022 16:48:32.875 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util=ALL-UNNAMED
+06-May-2022 16:48:32.875 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-May-2022 16:48:32.875 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-May-2022 16:48:32.875 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/conf/logging.properties
+06-May-2022 16:48:32.876 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-May-2022 16:48:32.876 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djdk.tls.ephemeralDHKeySize=2048
+06-May-2022 16:48:32.876 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-May-2022 16:48:32.876 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+06-May-2022 16:48:32.876 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dignore.endorsed.dirs=
+06-May-2022 16:48:32.876 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62
+06-May-2022 16:48:32.877 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62
+06-May-2022 16:48:32.877 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/temp
+06-May-2022 16:48:32.879 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 프로덕션 환경들에서 최적의 성능을 제공하는, APR 기반 Apache Tomcat Native 라이브러리가, 다음 java.library.path에서 발견되지 않습니다: [/Users/twoson/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+06-May-2022 16:48:33.228 정보 [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+06-May-2022 16:48:33.276 정보 [main] org.apache.catalina.startup.Catalina.load [714] 밀리초 내에 서버가 초기화되었습니다.
+06-May-2022 16:48:33.344 정보 [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+06-May-2022 16:48:33.345 정보 [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/9.0.62]
+06-May-2022 16:48:33.675 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/docs]을(를) 배치합니다.
+06-May-2022 16:48:33.704 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/docs]에 대한 배치가 [26] 밀리초에 완료되었습니다.
+06-May-2022 16:48:33.705 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/manager]을(를) 배치합니다.
+06-May-2022 16:48:33.746 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/manager]에 대한 배치가 [41] 밀리초에 완료되었습니다.
+06-May-2022 16:48:33.746 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/ITWeb]을(를) 배치합니다.
+06-May-2022 16:48:33.766 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/ITWeb]에 대한 배치가 [20] 밀리초에 완료되었습니다.
+06-May-2022 16:48:33.766 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/examples]을(를) 배치합니다.
+06-May-2022 16:48:34.052 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/examples]에 대한 배치가 [286] 밀리초에 완료되었습니다.
+06-May-2022 16:48:34.053 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/ROOT]을(를) 배치합니다.
+06-May-2022 16:48:34.074 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/ROOT]에 대한 배치가 [21] 밀리초에 완료되었습니다.
+06-May-2022 16:48:34.074 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/host-manager]을(를) 배치합니다.
+06-May-2022 16:48:34.100 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/host-manager]에 대한 배치가 [26] 밀리초에 완료되었습니다.
+06-May-2022 16:48:34.106 정보 [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8080"]을(를) 시작합니다.
+06-May-2022 16:48:34.117 정보 [main] org.apache.catalina.startup.Catalina.start 서버가 [840] 밀리초 내에 시작되었습니다.
+06-May-2022 17:18:02.545 경고 [main] org.apache.catalina.core.StandardContext.setPath 컨텍스트 경로는 반드시 빈 문자열이거나, 또는 '/'로 시작하고 '/'로 끝나지 않는 문자열이어야 합니다. 해당 경로 [it]은(는) 이 조건을 충족시키지 않아 [/it](으)로 변경되었습니다.
+06-May-2022 17:18:02.570 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/9.0.62
+06-May-2022 17:18:02.571 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  Mar 31 2022 14:34:15 UTC
+06-May-2022 17:18:02.571 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  9.0.62.0
+06-May-2022 17:18:02.571 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Mac OS X
+06-May-2022 17:18:02.571 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.15.7
+06-May-2022 17:18:02.571 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          x86_64
+06-May-2022 17:18:02.572 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           /Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home
+06-May-2022 17:18:02.572 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          11.0.12+7
+06-May-2022 17:18:02.572 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          Eclipse Foundation
+06-May-2022 17:18:02.572 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     /Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62
+06-May-2022 17:18:02.572 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     /Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62
+06-May-2022 17:18:02.574 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.lang=ALL-UNNAMED
+06-May-2022 17:18:02.574 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.io=ALL-UNNAMED
+06-May-2022 17:18:02.574 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util=ALL-UNNAMED
+06-May-2022 17:18:02.574 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-May-2022 17:18:02.574 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-May-2022 17:18:02.575 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/conf/logging.properties
+06-May-2022 17:18:02.575 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-May-2022 17:18:02.575 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djdk.tls.ephemeralDHKeySize=2048
+06-May-2022 17:18:02.575 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-May-2022 17:18:02.575 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+06-May-2022 17:18:02.575 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dignore.endorsed.dirs=
+06-May-2022 17:18:02.575 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62
+06-May-2022 17:18:02.575 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62
+06-May-2022 17:18:02.576 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/temp
+06-May-2022 17:18:02.577 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 프로덕션 환경들에서 최적의 성능을 제공하는, APR 기반 Apache Tomcat Native 라이브러리가, 다음 java.library.path에서 발견되지 않습니다: [/Users/twoson/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+06-May-2022 17:18:02.861 정보 [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+06-May-2022 17:18:02.879 심각 [main] org.apache.catalina.util.LifecycleBase.handleSubClassException 구성요소 [Connector[HTTP/1.1-8080]]을(를) 초기화하지 못했습니다.
+	org.apache.catalina.LifecycleException: 프로토콜 핸들러 초기화가 실패했습니다.
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1049)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:556)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1042)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:724)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:746)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:305)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:475)
+	Caused by: java.net.BindException: Address already in use
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:455)
+		at java.base/sun.nio.ch.Net.bind(Net.java:447)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:274)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:229)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1227)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1240)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:603)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:80)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1046)
+		... 13 more
+06-May-2022 17:18:02.880 정보 [main] org.apache.catalina.startup.Catalina.load [588] 밀리초 내에 서버가 초기화되었습니다.
+06-May-2022 17:18:02.931 정보 [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+06-May-2022 17:18:02.931 정보 [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/9.0.62]
+06-May-2022 17:18:03.192 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/docs]을(를) 배치합니다.
+06-May-2022 17:18:03.214 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/docs]에 대한 배치가 [20] 밀리초에 완료되었습니다.
+06-May-2022 17:18:03.214 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/manager]을(를) 배치합니다.
+06-May-2022 17:18:03.244 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/manager]에 대한 배치가 [30] 밀리초에 완료되었습니다.
+06-May-2022 17:18:03.244 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/ITWeb]을(를) 배치합니다.
+06-May-2022 17:18:03.261 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/ITWeb]에 대한 배치가 [16] 밀리초에 완료되었습니다.
+06-May-2022 17:18:03.261 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/examples]을(를) 배치합니다.
+06-May-2022 17:18:03.537 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/examples]에 대한 배치가 [275] 밀리초에 완료되었습니다.
+06-May-2022 17:18:03.537 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/ROOT]을(를) 배치합니다.
+06-May-2022 17:18:03.557 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/ROOT]에 대한 배치가 [20] 밀리초에 완료되었습니다.
+06-May-2022 17:18:03.558 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/host-manager]을(를) 배치합니다.
+06-May-2022 17:18:03.575 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/host-manager]에 대한 배치가 [18] 밀리초에 완료되었습니다.
+06-May-2022 17:18:03.580 정보 [main] org.apache.catalina.startup.Catalina.start 서버가 [699] 밀리초 내에 시작되었습니다.
+06-May-2022 17:18:03.585 심각 [main] org.apache.catalina.core.StandardServer.await 주소 [localhost]와(과) 포트 [8005]에, 서버 셧다운 소켓을 생성하지 못했습니다. (base 포트 [8005], offset [0])
+	java.net.BindException: Address already in use (Bind failed)
+		at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+		at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:577)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:864)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:810)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+06-May-2022 17:18:03.586 정보 [main] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["http-nio-8080"]을(를) 일시 정지 중
+06-May-2022 17:18:03.586 정보 [main] org.apache.catalina.core.StandardService.stopInternal 서비스 [Catalina]을(를) 중지시킵니다.
+06-May-2022 17:18:03.606 정보 [main] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["http-nio-8080"]을(를) 중지시킵니다.
+06-May-2022 17:18:03.607 정보 [main] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["http-nio-8080"]을(를) 소멸시킵니다.
+06-May-2022 17:21:24.987 정보 [Catalina-utility-1] org.apache.catalina.startup.HostConfig.reload 컨텍스트 []을(를) 다시 로드합니다.
+06-May-2022 17:21:24.988 정보 [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload 이름이 []인 컨텍스트를 다시 로드하는 작업이 시작되었습니다.
+06-May-2022 17:21:25.024 정보 [Catalina-utility-1] org.apache.catalina.core.StandardContext.reload 이름이 []인 컨텍스트를 다시 로드하는 것을 완료했습니다.
+06-May-2022 17:22:23.659 정보 [main] org.apache.catalina.core.StandardServer.await 셧다운 포트를 통해 유효한 셧다운 명령을 받았습니다. 서버 인스턴스를 중지시킵니다.
+06-May-2022 17:22:23.659 정보 [main] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["http-nio-8080"]을(를) 일시 정지 중
+06-May-2022 17:22:23.663 정보 [main] org.apache.catalina.core.StandardService.stopInternal 서비스 [Catalina]을(를) 중지시킵니다.
+06-May-2022 17:22:23.683 정보 [main] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["http-nio-8080"]을(를) 중지시킵니다.
+06-May-2022 17:22:23.688 정보 [main] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["http-nio-8080"]을(를) 소멸시킵니다.
+06-May-2022 17:22:24.334 경고 [main] org.apache.catalina.core.StandardContext.setPath 컨텍스트 경로는 반드시 빈 문자열이거나, 또는 '/'로 시작하고 '/'로 끝나지 않는 문자열이어야 합니다. 해당 경로 [it]은(는) 이 조건을 충족시키지 않아 [/it](으)로 변경되었습니다.
+06-May-2022 17:22:24.359 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/9.0.62
+06-May-2022 17:22:24.360 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  Mar 31 2022 14:34:15 UTC
+06-May-2022 17:22:24.360 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  9.0.62.0
+06-May-2022 17:22:24.360 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Mac OS X
+06-May-2022 17:22:24.360 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.15.7
+06-May-2022 17:22:24.360 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          x86_64
+06-May-2022 17:22:24.361 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           /Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home
+06-May-2022 17:22:24.361 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          11.0.12+7
+06-May-2022 17:22:24.361 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          Eclipse Foundation
+06-May-2022 17:22:24.361 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     /Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62
+06-May-2022 17:22:24.361 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     /Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62
+06-May-2022 17:22:24.363 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.lang=ALL-UNNAMED
+06-May-2022 17:22:24.364 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.io=ALL-UNNAMED
+06-May-2022 17:22:24.364 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util=ALL-UNNAMED
+06-May-2022 17:22:24.364 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-May-2022 17:22:24.364 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-May-2022 17:22:24.364 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/conf/logging.properties
+06-May-2022 17:22:24.365 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-May-2022 17:22:24.365 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djdk.tls.ephemeralDHKeySize=2048
+06-May-2022 17:22:24.365 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-May-2022 17:22:24.365 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+06-May-2022 17:22:24.365 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dignore.endorsed.dirs=
+06-May-2022 17:22:24.366 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62
+06-May-2022 17:22:24.366 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62
+06-May-2022 17:22:24.366 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/temp
+06-May-2022 17:22:24.368 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 프로덕션 환경들에서 최적의 성능을 제공하는, APR 기반 Apache Tomcat Native 라이브러리가, 다음 java.library.path에서 발견되지 않습니다: [/Users/twoson/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+06-May-2022 17:22:24.650 정보 [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+06-May-2022 17:22:24.677 정보 [main] org.apache.catalina.startup.Catalina.load [587] 밀리초 내에 서버가 초기화되었습니다.
+06-May-2022 17:22:24.727 정보 [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+06-May-2022 17:22:24.727 정보 [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/9.0.62]
+06-May-2022 17:22:24.976 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/docs]을(를) 배치합니다.
+06-May-2022 17:22:24.997 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/docs]에 대한 배치가 [19] 밀리초에 완료되었습니다.
+06-May-2022 17:22:24.997 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/manager]을(를) 배치합니다.
+06-May-2022 17:22:25.027 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/manager]에 대한 배치가 [30] 밀리초에 완료되었습니다.
+06-May-2022 17:22:25.027 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/ITWeb]을(를) 배치합니다.
+06-May-2022 17:22:25.042 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/ITWeb]에 대한 배치가 [15] 밀리초에 완료되었습니다.
+06-May-2022 17:22:25.043 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/examples]을(를) 배치합니다.
+06-May-2022 17:22:25.266 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/examples]에 대한 배치가 [222] 밀리초에 완료되었습니다.
+06-May-2022 17:22:25.266 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/ROOT]을(를) 배치합니다.
+06-May-2022 17:22:25.287 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/ROOT]에 대한 배치가 [21] 밀리초에 완료되었습니다.
+06-May-2022 17:22:25.287 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/host-manager]을(를) 배치합니다.
+06-May-2022 17:22:25.307 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/twoson/Documents/github/BackStudy/Servlet-JSP/apache-tomcat-9.0.62/webapps/host-manager]에 대한 배치가 [20] 밀리초에 완료되었습니다.
+06-May-2022 17:22:25.313 정보 [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8080"]을(를) 시작합니다.
+06-May-2022 17:22:25.324 정보 [main] org.apache.catalina.startup.Catalina.start 서버가 [647] 밀리초 내에 시작되었습니다.
+06-May-2022 17:24:21.583 정보 [main] org.apache.catalina.core.StandardServer.await 셧다운 포트를 통해 유효한 셧다운 명령을 받았습니다. 서버 인스턴스를 중지시킵니다.
+06-May-2022 17:24:21.583 정보 [main] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["http-nio-8080"]을(를) 일시 정지 중
+06-May-2022 17:24:21.587 정보 [main] org.apache.catalina.core.StandardService.stopInternal 서비스 [Catalina]을(를) 중지시킵니다.
+06-May-2022 17:24:21.609 정보 [main] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["http-nio-8080"]을(를) 중지시킵니다.
+06-May-2022 17:24:21.613 정보 [main] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["http-nio-8080"]을(를) 소멸시킵니다.

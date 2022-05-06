@@ -1,0 +1,36 @@
+
+# 톰캣에 의해서 서블릿 코드 실행되도록 코드 배치와 요청
+
+WEB-INF /
+    web.xml
+    classes /
+        Nana.class
+
+class를 사용자가 요청하면 톰캣은 절대 주지 않는다.
+--> 보안상 문제가 있음
+--> 오로지 서버에서만 사용 가능하다.
+--> 비공개 영역
+==> 특별한 방법으로 요청한다.
+
+WEB-INF 폴더는 설정관련 파일 모음으로 서버를 제외하면 그 누구도 절대 요청할 수 없다.
+
+
+
+1. 사용자가 필요한 서비스의 특정 URL을 요청한다.
+2. (웹서버+WAS)는 URL과 매핑된 Servlet 코드를 찾아서 실행한다.
+---> 매핑 방법
+     WEB-INF/web.xml에서 매핑 설정을 한다.
+    <servlet>
+        <servlet-name>na</servlet-name>
+        <servlet-class>Nana</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>na</servlet-name>
+        <url-pattern>/hello</url-pattern>
+    </servlet-mapping>    
+
+==> http://localhost:8080/hello 에 해당하는 서블릿 클래스를 찾아 코드 실행
+
+
+     
