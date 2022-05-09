@@ -1,0 +1,12 @@
+
+# Annotaion을 이용한 URL 매핑
+
+
+@WebServlet("/hello")
+--> Meta data로 볼 수도 있음
+(서블릿 3.0 이상)
+
+
+metadata-complete="true" --> 모든 설정을 web.xml에서 하겠다는 것
+==> false를 해야 Annotaion을 쓸 수 있음
+
