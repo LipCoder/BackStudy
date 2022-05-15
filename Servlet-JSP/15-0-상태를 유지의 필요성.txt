@@ -1,0 +1,21 @@
+
+
+전역 변수처럼 꼭 값을 유지해야 하는 경우에는 어떻게 해야 하는가?
+
+
+
+post ====> add?num=5            값 저장
+post ====> add?num=15           값 저장
+post ====>  
+
+
+# 상태 유지를 위한 5가지 방법
+
+1. 어딘가에 담아놓을 수 있는 공간
+application 객체
+session 객체 
+cookie
+
+2. 추후 설명
+hidden input
+querystring

@@ -31,9 +31,21 @@
     <servlet-name>test</servlet-name>
     <url-pattern>/test</url-pattern>
   </servlet-mapping> -->  
-
-
+ 
+  <!-- servlet filter -->
+  <!-- 어노테이션으로도 가능하다. -->
+  <!-- <filter>
+  	<filter-name>characterEncodingFilter</filter-name>
+  	<filter-class>com.lipcoder.web.filter.CharacterEncodingFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>characterEncodingFilter</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping> -->
+	
+  <!-- web.xml title -->
   <display-name>Welcome to Tomcat</display-name>
+  <!-- web.xml 설명 -->
   <description>
      Welcome to Tomcat
   </description>
