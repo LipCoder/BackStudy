@@ -1,0 +1,36 @@
+
+
+# HTML 출력이 많은 결과 페이지
+
+자바를 이용하여 html을 작성하기는 너무나도 비효율적이다...
+==> 그래서 나온것이 JSP (Jasper)
+
+Jasper로 간단하게 명령만 내리면 알아서 html 코드를 만들어 준다.
+서버사이드 스크립트
+
+
+
+add.jsp 를 만들면...
+Jasper를 이용하여 톰캣에서는...
+\work\Catalina\localhost\user\org\apache\jsp\add_jsp.java
+디렉토리 형태로 저장된다.
+
+이클립스에서는 톰캣의 배포 디렉토리는
+<workspace 경로>\.metadata\.plugins\org.eclipse.wst.server.core
+이다.
+
+tmp0 폴더안에 실제 배포 파일들이 저장된다.
+개발 용도로 사용되기 때문에 tmp를 붙여 임시폴더임을 알리고 있다.
+
+여기서 tmp0\work 폴더는 JSP(Jasper)의 작업실이라고 할 수 있다.
+
+calculator.jsp 
+==> tmp0\work\Catalina\localhost\ROOT\org\apache\jsp\caculator_jsp.class
+
+caculator_jsp 자바 파일을 살펴보면 JSP에서 자동으로 만들어 놓은 코드들을 볼 수 있다.
+여기서 JSP는 HttpJspBase를 상속받는다.
+HttpJspBase는 HttpServlet과 JSP의 중간다리 역할을 한다.
+
+HttpServlet ---> HttpJspBase ---> caculator_jsp
+
+JSP가 제대로 일을 할 수 있도록 하는 방법 ==> JSP 공부

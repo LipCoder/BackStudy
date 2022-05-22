@@ -48,6 +48,12 @@ public class Calc3 extends HttpServlet{
 			}
 			
 		}
+		
+		else if (operator != null && operator.equals("C")) {
+			// 쿠키 삭제
+			exp = "";
+		}
+		
 		else {
 			// 누적
 			exp += (value == null) ? "" : value;
@@ -57,6 +63,13 @@ public class Calc3 extends HttpServlet{
 		
 		
 		Cookie expCookie = new Cookie("exp", exp);
+		
+		if(exp.isEmpty())
+			expCookie.setMaxAge(0);		// 쿠키를 삭제하는 방법
+		
+		// cookie를 특정 URL 로만 전송하겠다.
+		// 루트를 명시하면 어떤 페이지에서든 쓰인다
+		expCookie.setPath("/");
 		resp.addCookie(expCookie);
 		
 		resp.sendRedirect("calcpage");
