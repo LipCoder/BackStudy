@@ -1,0 +1,44 @@
+
+
+# model 1 : 컨트롤러와 뷰가 물리적으로 분리되지 않은 방식
+
+JSP = Controller + (Model) + View
+
+
+# model 2 : 컨트롤러와 뷰가 물리적으로 분리된 방식
+
+Controller + (Model)
+        |
+        |
+        |
+        |
+        |
+        ↓
+       View
+
+
+# model 2 : Dispatcher를 집중화 하기 전의 모델
+
+User -----> Tomcat <-----> Controller & Dispatcher(many)
+                                        |
+                                        |
+                                        | (forwarding)
+                                        |
+                                        |
+                                        ↓
+                                    View(many)
+                                      jsp
+
+
+# model 2 : Dispatcher를 집중화 한 후의 모델
+
+User -----> Tomcat <----->  Dispatcher ---<url-mapping>---> Controller(many)
+                                |                           (POJO, Not Servlet)
+                                |
+                                |
+                                | (forwarding)
+                                |
+                                |
+                                ↓
+                              View
+                              jsp

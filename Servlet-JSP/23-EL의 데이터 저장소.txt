@@ -1,0 +1,29 @@
+
+# 저장 객체에서 값을 추출하는 순서
+
+${cnt}가 모든 저장객체에 들어가면 어떻게 구분할까?
+바로 순서로 구분한다. 
+page -> request -> session -> application 순서로 찾으면서...
+찾으면 종료된다.
+
+그러면 특수한 상황에서 해당 저장객체에 있는 값만을 가지고 오고 싶다면?
+아래에 서술할 내장 객체를 사용하면 된다.
+
+1. pageScope        : Page 영역 생명주기에서 사용되는 저장소 (PageContext 객체)
+2. requestScope     : Request ... (forward, redirect)
+3. sessionScope     : Session ...
+4. applicationScope : Application ...
+(한정자로서 사용된다.)
+
+${sessionScope.cnt}
+
+
+5. param            : 파라미터 값을 저장하고 있는 저장소
+6. paramValues      : ...
+7. header           : Header 정보를 저장하고 있는 저장소
+8. headerValues     : ...
+9. cookie           : 쿠키 정보를 저장하고 있는 저장소
+10. initParam       : 컨텍스트의 초기화 파라미터를 저장하고 있는 저장소
+11. pageContext     : 페이지 범위의 컨텍스트 저장소 
+<%=pageContext.getRequest().getMEthod()%> ----> ${pageContext.request.method}
+

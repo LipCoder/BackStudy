@@ -1,0 +1,28 @@
+
+# EL (Expression Language)
+
+코드 블록을 최대한 몰아내겠다! 
+(자바 코드를 몰아내겠다! MVC의 철학!)
+
+# 저장 객체에서 값을 추출해서 출력하는 표현식
+* Controller
+// 1
+request.setAttribute("cnt", 30);
+
+// 2.List
+List list = new ArrayList(){"1", "test", ....};
+request.setAttribute("list", list);
+
+// 3.Map 
+Map n = new HashMap("title", "제목");
+request.setAttribute("n", n);
+
+* View
+// 1
+request.getAttribute("cnt"); ----> ${cnt}
+
+// 2.List
+((List)request.getAttribute("list")).get(0) ----> ${list[0]}
+
+// 3.Map
+((Map)request.getAttribute("n")).get("title") ----> ${n.title}

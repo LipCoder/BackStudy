@@ -17,7 +17,7 @@ public final add_jsp extends org.apache.jasper.runtime.HttpJspBase
 
 
 
-# 종류 2 : 코드블록 (<%%>)
+# 종류 2 : 코드블록 (<% %>)
 
 <%
     y = x + 3;
@@ -38,7 +38,7 @@ public final add_jsp extends org.apache.jasper.runtime.HttpJspBase
 
 # 종류 3 : 코드블록(출력용) (=)
 
-y의 값은 : <% =y %> 
+y의 값은 : <%= y %> 
 
 public final add_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent
