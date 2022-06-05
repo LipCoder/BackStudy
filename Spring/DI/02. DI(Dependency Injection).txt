@@ -1,0 +1,53 @@
+
+# 스프링 프레임워크 코어기능 : 종속 객체를 생성 조립해주는 도구
+
+DI(Dependency Injection)
+
+
+
+# Dependency 들을 조립하기
+
+* Composition(일체형) has a 관계
+    - 종속성, 종속 객체
+    class A
+    {
+        private B b;
+
+        public A() {
+            b = new B();    // 직접 생성해서 관리한다.
+        }
+    }
+
+* Association(결합형) has a 
+    - 부품을 갈아끼기 수월하다는 장점이 있다.
+    - 하지만 부품을 조립해야 하는 수고가 든다.
+    class A
+    {
+        private B b;
+
+        public A() {
+            //b = new B();      
+        }
+
+
+        // 외부에서 가져와 쓴다. (주입해준다)
+        public void setB(B b) {
+            this.b = b;     
+        }
+    }    
+
+
+
+# 조립 방법(Injection)
+    1. Setter Injection
+        B b = new B();
+        A a = new A();
+        a.setB(b);
+
+    2. Construction Injection
+        B b = new B();
+        A a = new A(b);
+
+
+    ==> 이런 번거로운 조립을 해주는 서비스가 있다면 좋지 않을까?
+        ---> Spring!

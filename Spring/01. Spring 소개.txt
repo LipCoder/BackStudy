@@ -1,0 +1,45 @@
+
+Spring은 무엇이며 왜 우리는 Spring을 배워야 하는가?
+
+# Spring 소개
+
+# 1. Dependency Injection : 스프링 프레임워크의 핵심 기능
+
+dependency injection 
+transaction management
+    Java Enterprise Edition의 복잡도를 줄이고 개발할 수 있게 해줌
+
+
+# 기업형 응용 프로그램을 보조하기 위한 쉬운 프레임워크
+    Java EE(Enterprise Edition) ====> Spring(대세)
+        분산형, 기업형 응용 프로그램 개발을 위한 API
+        결합력을 낮추는 DI, DB Transaction 처리, 로그 처리...
+
+    Java SE  
+        일반적인 로컬 응용 프로그램 개발을 위한 API
+        파일 I/O, 콘솔 I/O, 윈도우 I/O, 네트워크 I/O, Thread
+
+
+    Java EE도 Spring 처럼 변화를 거듭하였지만, 이미 유료화 되었고, 
+    스프링이라는 강력한 프레임워크가 있기 때문에, 쓸 이유가 없음
+
+
+
+# 웹을 위한 스프링 프레임워크 모듈
+    ----------------
+    Java EE | Spring
+    ----------------
+         Java SE
+    ----------------
+
+1. MVC 
+    -> DI 사용     
+        -> 느슨한 결합력과 인터페이스
+
+ 
+ 2. Transaction         
+    -> AOP 사용         
+ 
+
+ 3. 인증과 권한
+    -> Servlet Filter
