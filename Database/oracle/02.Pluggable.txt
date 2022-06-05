@@ -1,0 +1,15 @@
+# Seed PDB를 이용한 Pluggable 데이터베이스 생성
+
+PDB(Pluggable Database)
+
+CREATE PLUGGABLE DATABASE
+: 독립된 조그마한 데이터베이스...(가상화된)
+
+CDB(Container Database)
+= Root(CDB$ROOT)
+        ↑
+        |
+        |
+        |
+        |
+ Seed(PDB$SEED, 원본) (===> XEPDB1,복사본)

@@ -1,0 +1,31 @@
+# Predefined User Accounts Provided by Oracle Database
+
+*Admin Accounts
+SYS (SYSDBA)
+- An account used to perform database administration tasks.
+
+SYSTEM 
+- A default generic database administration account for Oracle database.
+
+권한비교
+SYS > SYSTEM
+
+*Default Sample Schema User Accounts (샘플 데이터)
+BI(Business Intelligence)
+OE(Order Entry)
+IX(Information Exchange)
+HR(Human Resources)
+PM(Product Media)
+SH(Sales)
+
+
+
+# 데이터베이스와 데이터 파일 그리고 테이블 스페이스
+
+Database (데이터 저장소)
+==> 여러 개의 파일을 가지고 있음 
+
+    --> 테이블 스페이스                     ====> SCHEMA ====> 사용자 권한 추가
+        (학생테이블, 도서대여테이블)
+
+
