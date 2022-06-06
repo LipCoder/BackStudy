@@ -1,0 +1,22 @@
+# ApplicationContext 생성하기
+
+ApplicationContext context = new 
+        Class PathXmlApplicationContext("config.xml");
+
+
+# ApplicationContext 종류
+
+    설정파일(지시서)을 어떻게 지정하고 싶은지에 따라서
+    상속받는 하위 클래스가 달라진다.
+
+    ClassPathXmlApplicationContext 
+    --> 로컬상의 루트폴더로 부터 경로를 지정하고 싶은 경우
+
+    FileSystemXmlApplicationContext
+    --> 현재 OS 파일 시스템으로 부터 ...
+
+    XmlWebApplicationContext
+    --> 웹을 통해서 ...
+
+    AnnotaionConfigApplicationContext
+    --> 어노테이션을 통해서 스캔하고 싶은 경우 

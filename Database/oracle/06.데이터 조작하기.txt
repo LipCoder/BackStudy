@@ -1,0 +1,24 @@
+
+# 데이터 삽입하기 - INSERT 
+
+INSERT 명령 규칙
+    INSERT INTO <테이블> VALUES <값목록>
+
+
+모든 필드 값을 입력하기
+    INSERT INTO MEMBER VALUES( 'newlec', '111', 
+    '홍길동', '남성', ...);
+
+원하는 필드만, 원하는 순서대로 입력하기
+    INSERT INTO MEMBER(ID, PWD) VALUES('newlec', '111');
+    INSERT INTO MEMBER(PWD, ID) VALUES('111', 'newlec');
+    
+        ==> 나머지 속성들은 NULL 값이 입력된다.
+
+
+    SELECT * FROM MEMBER;
+
+
+
+# 데이터 수정하기 - UPDATE
+    UPDATE <테이블> SET <식>

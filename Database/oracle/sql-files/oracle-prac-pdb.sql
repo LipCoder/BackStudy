@@ -67,6 +67,63 @@ CREATE TABLE MEMBER_ROLE
 
 
 
+-- insert
+INSERT INTO MEMBER(ID, PWD) VALUES('newlec', '1111');
+INSERT INTO MEMBER(ID, PWD) VALUES('dragon', '2222');
+SELECT * FROM MEMBER;
+SELECT id, name, pwd FROM MEMBER;
+SELECT id as user_id, name pwd FROM MEMBER;
+SELECT id user_id, name pwd FROM MEMBER;
+SELECT id "user id", name pwd FROM MEMBER;
+SELECT id "USER ID", name pwd FROM MEMBER;
+
+
+-- update
+UPDATE MEMBER SET PWD='222';
+UPDATE MEMBER SET PWD='333' WHERE ID='newlec';
+
+UPDATE MEMBER SET PWD='333', name='손오공' WHERE ID='newlec';
+DELETE MEMBER WHERE ID='newlec';
+
+
+-- commit rollback
+INSERT INTO MEMBER(ID, PWD) VALUES('test1','1234');
+INSERT INTO MEMBER(ID, PWD) VALUES('test2','4321');
+COMMIT;
+
+SELECT ID, PWD FROM MEMBER;
+ROLLBACK;
+
+
+-- 산술 연산자
+    -- 숫자
+SELECT HIT+1 FROM NOTICE;
+SELECT 1+'3' FROM DUAL;
+
+    -- 문자
+SELECT '3' || 10 FROM DUAL;
+SELECT 1+'A' FROM DUAL;
+
+SELECT NAME || '(' || ID || ')' name FROM MEMBER;
+
+
+-- 비교 연산자 (WHERE 절에 사용된다)
+SELECT * FROM NOTICE WHERE WRITER_ID = 'newlec';
+SELECT * FROM NOTICE WHERE HIT > 3;
+SELECT * FROM NOTICE WHERE CONTENT IS NULL;
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

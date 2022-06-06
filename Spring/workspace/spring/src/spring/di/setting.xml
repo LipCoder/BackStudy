@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- 지시서 -->
+	<!-- 설정 파일을 이용하여, 스프링에게 객체 생성을 맡기겠다. -->
+	
+	<!-- Exam exam = new NewlecExam(); -->
+	<bean id="exam" class="spring.di.entity.NewlecExam" />	
+	<!-- 동명의 클래스를 피할 수 있게 패키지명도 꼭 적어줘야 한다. -->
+	
+	<!-- ExamConsole console = new GridExamConsole(); -->
+	<!-- <bean id="console" class="spring.di.ui.GridExamConsole"> -->
+	<bean id="console" class="spring.di.ui.InlineExamConsole">
+		<!-- console.setExam(exam); -->
+		<property name="exam" ref="exam"/>
+		<!-- name은 메서드의 이름을 뜻한다. -->
+		<!-- set은 생략한다. -->
+		<!-- 
+			파라미터의 종류에 따라 오는 속성 이름이 다르다. 
+			value = 밸류타입, ref = 래퍼런스타입
+			Exam은 클래스로 래퍼런스 타입이다.
+		--> 
+	</bean>
+	
+	
+	
+	
+</beans>
