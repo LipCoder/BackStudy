@@ -102,7 +102,7 @@ SELECT 1+'3' FROM DUAL;
 
     -- 문자
 SELECT '3' || 10 FROM DUAL;
-SELECT 1+'A' FROM DUAL;
+SELECT 1 + 'A' FROM DUAL;
 
 SELECT NAME || '(' || ID || ')' name FROM MEMBER;
 
@@ -112,13 +112,53 @@ SELECT * FROM NOTICE WHERE WRITER_ID = 'newlec';
 SELECT * FROM NOTICE WHERE HIT > 3;
 SELECT * FROM NOTICE WHERE CONTENT IS NULL;
 
+-- 관계 비교 연산자
+SELECT * FROM NOTICE WHERE HIT BETWEEN 2 AND 4;
+SELECT * FROM NOTICE WHERE HIT IN(2, 3, 7);
+SELECT * FROM NOTICE WHERE HIT NOT IN(2, 3, 7);
+
+-- 패턴 비교 연산자
+    -- 박* 이름을 찾아라
+SELECT * FROM MEMBER WHERE NAME = '박%';
+SELECT * FROM NOTICE WHERE TITLE LIKE 'J%';
+
+    -- 박으로 시작하는 두글자를 찾아라
+SELECT * FROM MEMBER WHERE NAME LIKE '박_';
+
+    -- 회원 중에서 박씨 성을 제외한 회원을 조회하시오.
+SELECT * FROM MEMBER WHERE NAME NOT LIKE '박%';
+
+    -- 회원 중에 이름에 '도'자가 들어가는 회원을 조회하시오.
+SELECT * FROM MEMBER WHERE NAME LIKE '%도%';
+SELECT * FROM MEMBER WHERE NAME LIKE '%DB%';
 
 
+-- 정규식을 이용한 패턴 비교 연산
+    -- 전화번호가 찍힌 제목의 게시글을 조회하고 싶다.
+SELECT * FROM NOTICE WHERE TITLE LIKE '%-%-%';
+        -- 더 확실한 제한
+        -- 010-2222-3333
+        -- 011-333-4444
+        -- 016-234-4353
+        -- 018-123-2345
+        -- 019-232-2345
+SELECT * FROM NOTICE WHERE TITLE 
+LIKE '^01[016-9]-\d{3,4}-\d{4}$'; -- \d는 decimal digit로 [0-9]
+        -- (X)
+        
+SELECT * FROM NOTICE 
+WHERE REGEXP_LIKE(TITLE, '^01[01679]-\d{3,4}-\d{4}$');
+        -- (O)
 
 
-
-
-
+    -- 정규식을 이용한 문자열 비교
+        -- email
+        -- newlec@nana.com
+        -- sb92120@gmail.com
+        -- @ .net com org 
+        -- ^\D\w*@\D\w+.(com|net|org)$      -- [0-9a-zA-Z] = \w
+SELECT * FROM NOTICE
+WHERE REGEXP_LIKE(TITLE, '^\D\w*@\D\w+.(com|net|org)$');
 
 
 

@@ -1,0 +1,7 @@
+
+LIKE, %, _
+
+회원 중에서 박씨 성을 조회하시오
+SELECT * FROM MEMBER WHERE NAME = '박%'; (X) 
+    --> %를 문자로 인식한다.
+SELECT * FROM MEMBER WHERE NAME LIKE '박%';
